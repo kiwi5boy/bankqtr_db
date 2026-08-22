@@ -630,18 +630,22 @@ def quality_flags(panel: pl.DataFrame) -> pl.DataFrame:
 
     add("neg_loans", pl.col("loans_total") < 0, ("loans_total",))
     add("neg_acl", pl.col("acl_total") < 0, ("acl_total",))
-    add(
-        "components_exceed_total",
-        pl.sum_horizontal(
-            [
-                pl.col(c).fill_null(0.0)
-                for c in ("loans_commercial_total", "loans_consumer_total")
-                if c in have
-            ]
+    # Built before the ``add`` call rather than inside it: the arguments are
+    # evaluated first, so an empty ``sum_horizontal`` raises before ``add``
+    # ever gets to decide the check does not apply.  A panel carrying neither
+    # component column -- a build run without the fallback, or any caller
+    # handing over a subset -- took the whole report down with it.
+    components = [
+        pl.col(c).fill_null(0.0)
+        for c in ("loans_commercial_total", "loans_consumer_total")
+        if c in have
+    ]
+    if components:
+        add(
+            "components_exceed_total",
+            pl.sum_horizontal(components) > pl.col("loans_total") * 1.02,
+            ("loans_total",),
         )
-        > pl.col("loans_total") * 1.02,
-        ("loans_total", "loans_commercial_total"),
-    )
     add(
         "construction_exceeds_cre",
         pl.col("loans_construction") > pl.col("loans_cre_total") * 1.02,

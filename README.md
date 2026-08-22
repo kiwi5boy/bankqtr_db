@@ -123,7 +123,7 @@ uv run pytest tests/ -q
 uv run ruff check .
 ```
 
-<!--stats:tests-->308<!--/stats--> tests across both builds. Every one corresponds to a defect that produced
+<!--stats:tests-->380<!--/stats--> tests across both builds. Every one corresponds to a defect that produced
 **plausible but wrong** numbers during development — the dangerous kind, since
 nothing raises and the panel still renders. The catalogue of what they guard is
 in the wiki: **[Traps](https://github.com/keithcsqueensu/bankqtr_db/wiki/Traps)**.
@@ -167,6 +167,6 @@ bankqtr_db/     the EDGAR build   (filings, edgar, instance, xbrl, taxonomy,
 callrpt_db/     the FFIEC build   (cdr, nic, lineage, mdrm, schedules, panel,
                                    crosscheck, tfr)
 scripts/        fetch_* and build_* entry points
-tests/          308 tests, one per defect
+tests/          one test per defect (count under Testing, above)
 docs/           the GitHub Pages site: downloads and charts
 ```
