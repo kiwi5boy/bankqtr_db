@@ -18,6 +18,7 @@ stable.
 
 📖 **[Full documentation is in the wiki.](https://github.com/keithcsqueensu/bankqtr_db/wiki)**
 📊 **[Panel downloads and charts.](https://keithcsqueensu.github.io/bankqtr_db/)**
+📓 **[A worked example, start to finish.](examples/peer_nco_benchmark.ipynb)**
 
 ## Quick start
 
