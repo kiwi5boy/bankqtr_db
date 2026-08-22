@@ -21,10 +21,18 @@ The test is whether the artefacts carry *both halves* of a figure.  "72 of the
 ``sought``, ``resolved`` and ``rows`` are all recorded by the same build, so the
 sentence stays internally consistent however it moves.
 
-The 2013 build record fails that test and is left alone.  Its figures are paired
-with counterparts nothing records -- ``1,648 x 456``, ``29 of 31 banks``, quality
-flags ``363 -> 330``.  Refreshing one side of such a pair would state something
-that was never true of any build, which is worse than a stale number.
+Sometimes the second half can be *made* computable, and then a figure that looked
+untrackable becomes trackable: ``_early_coverage`` derives both the count and the
+exceptions in "N of 31 banks have all 28 quarters of 2013-2019" from the panel
+together, which is what lets that sentence be wrapped at all.
+
+What stays unwrapped is the measurement of a *change*: ``newly populated 6,162``,
+``changed 516``, element usage like "at 9 of 29 banks".  Those came from diffing
+two builds during development and no artefact records either side.
+
+The rule: if you cannot recompute every number in a sentence, do not wrap any of
+them.  A half-refreshed sentence states something no build ever produced, which
+is worse than a stale one.
 
 Where the numbers come from
 ---------------------------
@@ -91,6 +99,42 @@ def _provenance_columns(path: Path) -> int:
     """How many of the EDGAR panel's columns are ``__source`` provenance."""
     names = pl.scan_parquet(path).collect_schema().names()
     return sum(1 for n in names if n.endswith("__source"))
+
+
+# The pre-CECL half of the EDGAR panel.  The back-extension's coverage claim is
+# about this window specifically, so it is named once here rather than spelled
+# into a document that cannot be checked.
+EARLY_WINDOW = (2013, 2019)
+
+
+def _early_coverage(path: Path) -> dict[str, Any]:
+    """How completely the pre-CECL window is populated, and who falls short.
+
+    The 2013 build record claims "N of 31 banks have all 28 quarters".  Both
+    halves are recomputable from the panel, which is what makes the sentence
+    safe to automate: refreshing one without the other would state something
+    no build ever produced.
+    """
+    lo, hi = EARLY_WINDOW
+    year = pl.col("quarter").str.slice(0, 4).cast(pl.Int32)
+    early = (
+        pl.scan_parquet(path)
+        .filter(year.is_between(lo, hi))
+        .group_by("ticker")
+        .agg(pl.col("quarter").n_unique().alias("n"))
+        .collect()
+    )
+    if early.is_empty():
+        return {}
+    full = int(early["n"].max() or 0)
+    short = early.filter(pl.col("n") < full).sort("n")
+    return {
+        "window_quarters": full,
+        "banks_complete": int(early.filter(pl.col("n") == full).height),
+        "banks_short": [
+            {"ticker": t, "quarters": int(n)} for t, n in short.iter_rows()
+        ],
+    }
 
 
 def _test_count() -> int | None:
@@ -191,10 +235,11 @@ def refresh_stats() -> dict:
     stats["edgar"]["provenance_columns"] = _provenance_columns(
         ROOT / "data" / "panel.parquet"
     )
+    stats["edgar"]["early"] = _early_coverage(ROOT / "data" / "panel.parquet")
 
-    # Carry both build records forward, then overwrite whichever one the
+    # Carry the build records forward, then overwrite whichever one the
     # artefacts on disk describe.
-    for variant in ("build_tfr", "build_plain"):
+    for variant in ("build_tfr", "build_plain", "build_edgar"):
         if variant in prior:
             stats[variant] = prior[variant]
 
@@ -203,6 +248,15 @@ def refresh_stats() -> dict:
         info = json.loads(info_path.read_text(encoding="utf-8"))
         variant = "build_tfr" if info.get("tfr") else "build_plain"
         stats[variant] = _build_record(info)
+
+    edgar_info = ROOT / "data" / "out" / "panel_build_info.json"
+    if edgar_info.exists():
+        info = json.loads(edgar_info.read_text(encoding="utf-8"))
+        stats["build_edgar"] = {
+            "inputs": info.get("inputs") or {},
+            "provenance": info.get("provenance") or {},
+            "value_columns": (info.get("panel") or {}).get("value_columns"),
+        }
 
     tests = _test_count()
     stats["tests"] = tests if tests is not None else prior.get("tests")
@@ -280,6 +334,26 @@ def values(stats: dict) -> dict[str, str]:
     }
     if "tests" in stats:
         out["tests"] = f"{stats['tests']}"
+
+    # The pre-CECL window's coverage, both halves from the same panel.
+    early = e.get("early") or {}
+    if early:
+        out["edgar-early-quarters"] = f"{early['window_quarters']}"
+        out["edgar-early-complete"] = f"{early['banks_complete']}"
+        out["edgar-early-short"] = (
+            ", ".join(
+                f"{b['ticker']} {b['quarters']}" for b in early["banks_short"]
+            )
+            or "none"
+        )
+
+    edgar_build = stats.get("build_edgar") or {}
+    for key, n in (edgar_build.get("inputs") or {}).items():
+        out[f"edgar-input-{key.replace('_', '-')}"] = f"{n:,}"
+    for key, n in (edgar_build.get("provenance") or {}).items():
+        out[f"edgar-cells-{key.replace('_', '-')}"] = f"{n:,}"
+    if edgar_build.get("value_columns") is not None:
+        out["edgar-value-cols"] = f"{edgar_build['value_columns']:,}"
 
     # The shipped panel is the --tfr build, so its figures are the unqualified
     # ones.  The plain build is the comparison the thrift-gap tables are built

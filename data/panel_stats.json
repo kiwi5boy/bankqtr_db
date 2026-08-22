@@ -5,7 +5,17 @@
     "banks": 31,
     "first_quarter": "2013Q1",
     "last_quarter": "2026Q2",
-    "provenance_columns": 271
+    "provenance_columns": 271,
+    "early": {
+      "window_quarters": 28,
+      "banks_complete": 30,
+      "banks_short": [
+        {
+          "ticker": "CFG",
+          "quarters": 26
+        }
+      ]
+    }
   },
   "ffiec": {
     "rows": 3763,
@@ -97,6 +107,20 @@
       "rows": null,
       "identities": {}
     }
+  },
+  "build_edgar": {
+    "inputs": {
+      "xbrl_facts": 339180,
+      "html_rows": 6631,
+      "ir_rows": 2135
+    },
+    "provenance": {
+      "xbrl": 113290,
+      "html": 1896,
+      "derived_ir": 623,
+      "ir_supplement": 263
+    },
+    "value_columns": 271
   },
   "tests": 308
 }
