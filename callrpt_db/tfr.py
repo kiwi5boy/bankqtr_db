@@ -22,9 +22,15 @@ The FDIC compiles its own quarterly financial series from whichever report an
 insured institution filed -- Call Report or TFR -- and publishes it on one
 schema through the BankFind API.  That is the whole reason this works where
 CDR does not: the TFR data exists, mapped into common fields, and only the
-FFIEC bulk files are Call-Report-only.  Measured over the 69 non-filing
-depositories in this universe's lineages, BankFind returns 1,897 quarterly
-rows for 2001-2012 and every field used below is populated on 100% of them.
+FFIEC bulk files are Call-Report-only.  Measured over the 72 non-filing
+depositories in this universe's lineages, BankFind returns 2,749 quarterly
+rows across the panel's whole window, and every field used below is populated
+on 100% of them.  Those rows run past the TFR's own retirement because the
+series does: BankFind keeps publishing for the institutions that survived into
+CDR, and :func:`panel.fold_tfr` drops each one where a Call Report for that
+charter-quarter exists.  The counts here are the shipped ``--tfr`` build's own,
+and they move whenever the universe or the lineage does -- ``thrift_gap`` in
+``call_panel_build_info.json`` is the live tally.
 
 Two things had to be checked rather than assumed, and both were:
 
@@ -32,8 +38,8 @@ Two things had to be checked rather than assumed, and both were:
 ``FED_RSSD`` alongside its own ``CERT``, and NIC's entity record carries
 ``fdic_cert`` alongside its RSSD -- so the two registries can be bridged on an
 identifier each collects independently, which is the same standard
-``resolve_rssd`` holds the EIN bridge to.  Every one of the 69 has an FDIC
-certificate in NIC.
+``resolve_rssd`` holds the EIN bridge to.  Every one of the 72 has an FDIC
+certificate in NIC, which is why ``sought`` and ``resolved`` agree.
 
 **The field names do not mean what they look like.**  ``NAASSET`` and
 ``NALNLS`` are both "nonaccrual" and they are not interchangeable, which is
@@ -42,7 +48,11 @@ were told apart by arithmetic: BankFind states ``NCLNLS`` (noncurrent loans
 and leases) as well, and for Washington Mutual at 2007Q4
 ``NALNLS 6,121,610 + P9ASSET 310,251 == NCLNLS 6,431,861`` to the dollar.
 That identity holds only if ``NALNLS`` is nonaccrual *loans* and ``P9ASSET``
-is the 90-days-past-due bucket, which is what fixes both mappings.
+is the 90-days-past-due bucket, which is what fixes both mappings.  Across
+the whole backfill :func:`check_identities` finds it holding on 2,742 of the
+2,749 rows; the seven exceptions are reported rather than corrected, since a
+mapping that reproduces the FDIC's own subtotal on 99.7% of rows is settled
+and the residue is the FDIC's arithmetic, not ours.
 
 ``LNLSGR`` against ``LNLSNET`` was settled the same way:
 ``LNLSGR - LNATRES == LNLSNET`` exactly, so ``LNLSGR`` is gross of the
