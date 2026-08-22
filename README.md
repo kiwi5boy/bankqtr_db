@@ -7,7 +7,7 @@ provenance and coverage reporting attached.
 | Package | Source | Entity | Output | Window |
 |---|---|---|---|---|
 | `bankqtr_db` | SEC EDGAR — XBRL, filing HTML, IR supplements | the holding company, as it reports itself | `panel.parquet` | <!--stats:edgar-window-->2013Q1 – 2026Q2<!--/stats--> |
-| `callrpt_db` | FFIEC — CDR bulk Call Reports, NIC structure data | its bank charters, summed | `call_panel.parquet` | <!--stats:ffiec-window-->2001Q1 – 2026Q2<!--/stats--> |
+| `callrpt_db` | FFIEC — CDR bulk Call Reports, NIC structure data; FDIC BankFind for the thrifts | its bank charters, summed | `call_panel.parquet` | <!--stats:ffiec-window-->2001Q1 – 2026Q2<!--/stats--> |
 
 They are not redundant. The EDGAR panel is what the market sees and covers the
 whole consolidated firm; the FFIEC panel is a regulatory filing on a fixed form,
@@ -15,6 +15,15 @@ so its categories cross-foot, it reaches back to 2001, and it covers the seven U
 intermediate holding companies of foreign banks that file no 10-K at all. Where
 the two disagree, `source_diff.csv` says by how much and whether the gap is
 stable.
+
+Before 2012Q1 that second panel is missing the thrifts by construction: an
+OTS-supervised savings institution filed a Thrift Financial Report, not a Call
+Report, so CDR holds nothing for Washington Mutual, Golden West, Countrywide
+Bank, IndyMac or Sovereign in the quarters they existed. The `--tfr` build
+supplements those quarters from FDIC BankFind, which compiles both report types
+onto one schema. Those rows carry `source = "tfr"` on coarser loan categories,
+so a reconstructed quarter is always distinguishable from a filed one. Without
+that flag the pre-2012 history is a floor, and `n_insured_not_filing` says where.
 
 📖 **[Full documentation is in the wiki.](https://github.com/keithcsqueensu/bankqtr_db/wiki)**
 📊 **[Panel downloads and charts.](https://keithcsqueensu.github.io/bankqtr_db/)**
