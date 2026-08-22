@@ -133,6 +133,13 @@ def compare(
     out = out.with_columns(
         pl.when(pl.col("edgar").is_null() | pl.col("ffiec").is_null())
         .then(pl.lit("one_source_only"))
+        # Identical readings agree, whatever the relative gap works out to.
+        # This branch exists for the zero case: ``difference_pct`` divides by
+        # the EDGAR value, so a bank that genuinely holds no card book reads
+        # 0 against 0, gets a null percentage, and fell through to "differ" --
+        # a disagreement between two sources that said the same thing.
+        .when(pl.col("difference") == 0)
+        .then(pl.lit("agree"))
         .when(pl.col("difference_pct").abs() <= AGREEMENT_TOLERANCE_PCT)
         .then(pl.lit("agree"))
         .otherwise(pl.lit("differ"))
@@ -205,7 +212,13 @@ def coverage_gained(edgar: pl.DataFrame, ffiec: pl.DataFrame) -> pl.DataFrame:
         return pl.DataFrame()
     known = set(edgar["ticker"].unique().to_list()) if not edgar.is_empty() else set()
     return (
-        ffiec.group_by("ticker")
+        # Sorted here rather than assumed: ``loans_total_latest`` is a "last"
+        # aggregate, so without an explicit order it is the last *row* of the
+        # group and not the latest *quarter* -- and it is also the sort key of
+        # the table below, so a caller that handed the panel over unsorted
+        # would get a plausible number beside the right ``last_quarter``.
+        ffiec.sort("period")
+        .group_by("ticker")
         .agg(
             pl.col("bank").first().alias("bank"),
             pl.len().alias("quarters"),
