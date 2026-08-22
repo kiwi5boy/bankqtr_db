@@ -25,3 +25,9 @@ packages = ["bankqtr_db", "callrpt_db"]
 dev = [
     "pytest>=9.1.1",
 ]
+# Only examples/ needs these; the build and test paths do not.
+examples = [
+    "ipykernel>=6.30.1",
+    "matplotlib>=3.10.6",
+    "nbclient>=0.10.2",
+]

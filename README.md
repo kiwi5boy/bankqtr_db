@@ -66,6 +66,24 @@ Both builds land in `data/out/`:
 Full list and column reference: **[Outputs](https://github.com/keithcsqueensu/bankqtr_db/wiki/Outputs)**
 and **[Data Dictionary](https://github.com/keithcsqueensu/bankqtr_db/wiki/Data-Dictionary)**.
 
+## A worked example
+
+**[`examples/peer_nco_benchmark.ipynb`](examples/peer_nco_benchmark.ipynb)** — a risk
+analyst benchmarks one bank's net charge-off rate against its DFAST peers: where it
+ranks, how that has moved since 2001, and whether the whole-book number is hiding an
+outlier in C&I, CRE or card. It reads both panels straight from the release assets, so it
+runs against a clean checkout with no build:
+
+```bash
+uv sync --group examples          # matplotlib and a kernel; not needed to build the panels
+cd examples && uv run jupyter execute --inplace peer_nco_benchmark.ipynb
+```
+
+That re-runs it in place against the current release. To read or edit it interactively,
+open it in VS Code or your own Jupyter — the `examples` group installs the kernel, and
+the notebook is committed with its outputs, so it also reads fine without running at all.
+The home bank is a variable in the first cell.
+
 ## Read this before using the data
 
 Four things will produce a wrong answer if you skip them. None is a bug; each is

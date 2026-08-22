@@ -17,3 +17,9 @@ __pycache__/
 # download links resolve relative to the page.  Committing both would put the
 # same 16 MB in the repository twice.
 docs/data/
+
+# The example notebook's local cache of the release assets. Downloaded on first
+# run by examples/peer_nco_benchmark.ipynb; regenerable, and the same files as
+# data/out/.  Unanchored, because the cache lands beside whatever directory the
+# notebook's kernel was started in.
+_data/
