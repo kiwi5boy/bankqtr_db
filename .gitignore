@@ -23,3 +23,7 @@ docs/data/
 # data/out/.  Unanchored, because the cache lands beside whatever directory the
 # notebook's kernel was started in.
 _data/
+
+# Scratch extraction grids from analysis runs. Every parquet a build produces
+# lands under data/; one at the repository root is an accident.
+/*.parquet
