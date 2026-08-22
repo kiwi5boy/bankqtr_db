@@ -96,7 +96,7 @@ The home bank is a variable in the first cell.
 
 ## Read this before using the data
 
-Four things will produce a wrong answer if you skip them. None is a bug; each is
+Five things will produce a wrong answer if you skip them. None is a bug; each is
 a property of the underlying disclosure that the panel reports rather than hides.
 
 1. **The CECL seam at 2020Q1.** Every row carries a `basis` column — `incurred`
@@ -109,8 +109,17 @@ a property of the underlying disclosure that the panel reports rather than hides
    early years is conditioned on surviving to 2026.
 4. **Check `mix_coverage_pct` before ranking peers.** On the EDGAR panel it is an
    estimate of coherence, not a guarantee — and ≈100 is necessary, not sufficient.
+5. **The pre-2012 thrifts are invisible without `--tfr`.** CDR is
+   Call-Report-only, so an OTS-supervised savings institution contributes zero
+   for every quarter it existed. JPMorgan's loan book jumps by Washington
+   Mutual's entirety at 2008Q3 — the quarter the Call Report first consolidates
+   it — and reads as growth. The shipped panel is the `--tfr` build, which
+   reconstructs <!--stats:thrift-rows-->2,749<!--/stats--> charter-quarters from
+   FDIC BankFind; `n_insured_not_filing` counts what is still missing.
 
-The full account, with the other two: **[Reading the Panel](https://github.com/keithcsqueensu/bankqtr_db/wiki/Reading-the-Panel)**.
+The full account — the other two, and the rest of what the long FFIEC window
+adds: **[Reading the Panel](https://github.com/keithcsqueensu/bankqtr_db/wiki/Reading-the-Panel)**
+and **[Going Back to 2001](https://github.com/keithcsqueensu/bankqtr_db/wiki/Going-Back-to-2001)**.
 
 ## The one thing to know first
 
