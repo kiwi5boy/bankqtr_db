@@ -1,0 +1,59 @@
+name: Variable dictionary
+
+# docs/variables.json is generated from the panels and from the definitions the
+# build itself uses -- the VarDefs, the taxonomy's categories, the MDRM item
+# table.  It is committed so the site is a set of static files with no build
+# step, which means it can go stale, and staleness here is silent: the page
+# still renders, it just describes a column that has since changed or omits one
+# that has since been added.
+#
+# So this does not fix anything, it only refuses.  Regenerating is one command
+# and belongs in the commit that changed the definition, next to the change
+# that made it necessary.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/*.parquet"
+      - "bankqtr_db/variables.py"
+      - "bankqtr_db/taxonomy.py"
+      - "callrpt_db/mdrm.py"
+      - "callrpt_db/panel.py"
+      - "apps/explore.py"
+      - "docs/variables.json"
+      - "scripts/build_dictionary.py"
+      - ".github/workflows/dictionary.yml"
+  pull_request:
+    paths:
+      - "data/*.parquet"
+      - "bankqtr_db/variables.py"
+      - "bankqtr_db/taxonomy.py"
+      - "callrpt_db/mdrm.py"
+      - "callrpt_db/panel.py"
+      - "apps/explore.py"
+      - "docs/variables.json"
+      - "scripts/build_dictionary.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install the project
+        run: uv sync --frozen
+
+      # Two failures, both worth stopping for: a column with no definition
+      # (the page would silently omit it, and a reader concludes it does not
+      # exist), and a committed file that no longer matches what the
+      # definitions produce.
+      - name: Check the dictionary is complete and current
+        run: uv run python scripts/build_dictionary.py --check

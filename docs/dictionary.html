@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bankqtr_db — variable dictionary</title>
+<meta name="description" content="Every column in both bank-quarter panels: what it means, where it comes from, and how much of it there is.">
+<style>
+  :root {
+    --ink:      #14181d;
+    --body:     #333a44;
+    --muted:    #667080;
+    --line:     #dfe3e9;
+    --line-2:   #eef1f5;
+    --bg:       #ffffff;
+    --panel:    #f7f9fb;
+    --accent:   #1f4e79;
+    --accent-2: #17395a;
+    --warn-bg:  #fdf6e7;
+    --warn-br:  #e8d59b;
+    --mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--body);
+    font: 15px/1.55 var(--sans); font-feature-settings: "tnum" 1;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px 72px; }
+  a { color: var(--accent); }
+
+  header { border-bottom: 1px solid var(--line); margin-bottom: 26px; }
+  .head-inner {
+    max-width: 1180px; margin: 0 auto; padding: 30px 28px 24px;
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
+  }
+  h1 { margin: 0 0 6px; font-size: 22px; line-height: 1.25; color: var(--ink); font-weight: 650; letter-spacing: -0.01em; }
+  h1 .mono { font-family: var(--mono); font-size: 21px; }
+  .tagline { margin: 0; color: var(--muted); font-size: 14px; max-width: 74ch; }
+  .crumb { font-size: 13px; color: var(--muted); margin: 0 0 10px; }
+
+  /* ---------- filter row: one row above everything it scopes ---------- */
+  .filters {
+    display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+    padding: 14px 16px; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--panel); margin-bottom: 6px;
+  }
+  .filters label { font-size: 12.5px; color: var(--muted); }
+  input[type="search"], select {
+    font: 14px var(--sans); color: var(--ink); background: var(--bg);
+    border: 1px solid var(--line); border-radius: 4px; padding: 7px 10px;
+  }
+  input[type="search"] { min-width: 300px; flex: 1 1 320px; font-family: var(--mono); font-size: 13px; }
+  input[type="search"]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+  .seg button {
+    font: 13px var(--sans); color: var(--body); background: var(--bg);
+    border: 0; border-right: 1px solid var(--line); padding: 7px 12px; cursor: pointer;
+  }
+  .seg button:last-child { border-right: 0; }
+  .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .count { font-size: 12.5px; color: var(--muted); margin: 10px 2px 14px; }
+
+  /* ---------- table ---------- */
+  .scroller { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+  table { border-collapse: collapse; width: 100%; min-width: 900px; }
+  thead th {
+    text-align: left; font-size: 11.5px; font-weight: 600; letter-spacing: .04em;
+    text-transform: uppercase; color: var(--muted); background: var(--panel);
+    padding: 9px 14px; border-bottom: 1px solid var(--line); white-space: nowrap;
+  }
+
+  /* Sticky only once the table fits without a horizontal scroller. An element
+     inside an overflow container sticks to that container, not the viewport,
+     so switching .scroller to visible is what makes the header follow the
+     page -- otherwise it parks 56px down and sits on top of the first row. */
+  @media (min-width: 960px) {
+    .scroller { overflow-x: visible; }
+    .filters { position: sticky; top: 0; z-index: 5; }
+    thead th { position: sticky; top: 62px; z-index: 4; }
+  }
+  tbody td { padding: 9px 14px; border-top: 1px solid var(--line-2); vertical-align: top; }
+  tbody tr.row:hover { background: var(--panel); }
+  tbody tr.row > td:first-child { width: 1%; }
+  .name {
+    font-family: var(--mono); font-size: 12.5px; color: var(--ink);
+    background: none; border: 0; padding: 0; cursor: pointer; text-align: left;
+    white-space: nowrap;
+  }
+  .name:hover, .name:focus-visible { color: var(--accent); text-decoration: underline; }
+  .name::before { content: "▸ "; color: var(--muted); }
+  tr.row.open .name::before { content: "▾ "; }
+  .label { color: var(--ink); }
+  .tag {
+    display: inline-block; font-family: var(--mono); font-size: 11px;
+    color: var(--muted); border: 1px solid var(--line); border-radius: 3px;
+    padding: 1px 5px; white-space: nowrap;
+  }
+  .win { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+  /* Inline coverage: a bar in a table cell, not a chart. One measure, one
+     colour -- the length already carries the magnitude. */
+  .cov { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .cov .track { width: 74px; height: 6px; border-radius: 3px; background: var(--line-2); overflow: hidden; }
+  .cov .fill { height: 100%; border-radius: 3px; background: var(--accent); }
+  .cov .n { font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+
+  /* ---------- expanded detail ---------- */
+  tr.detail > td { background: var(--panel); border-top: 0; padding: 2px 14px 18px 32px; }
+  .detail p { margin: 6px 0 12px; max-width: 88ch; }
+  .kv { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 16px; font-size: 13.5px; }
+  .kv dt { color: var(--muted); }
+  .kv dd { margin: 0; }
+  .kv code { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+  .src-mix { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12.5px; }
+  .src-mix span { font-family: var(--mono); }
+
+  .empty { padding: 34px 16px; text-align: center; color: var(--muted); }
+  .note {
+    border: 1px solid var(--warn-br); background: var(--warn-bg); border-radius: 6px;
+    padding: 12px 15px; font-size: 13.5px; margin: 0 0 18px;
+  }
+  footer {
+    margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--line);
+    font-size: 12.5px; color: var(--muted); display: flex;
+    justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  @media (max-width: 780px) {
+    .head-inner { padding: 24px 20px 20px; }
+    .wrap { padding: 0 20px 56px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <div>
+      <p class="crumb"><a href="./">bankqtr_db</a> / variable dictionary</p>
+      <h1>Variable dictionary</h1>
+      <p class="tagline">
+        Every column in both panels — what it means, which filing line it comes
+        from, and how much of it there is. Generated from the definitions the
+        build itself uses, so it cannot drift from the data.
+      </p>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <p class="note">
+    The counts here are plain: populated cells, distinct banks, first and last
+    quarter. Whether a variable is <em>usable</em> for a given question — how
+    the gaps line up across banks, and what a set of variables leaves you to fit
+    on — is what <code>apps/explorer.py</code> answers.
+  </p>
+
+  <div class="filters">
+    <input type="search" id="q" placeholder="name, meaning, MDRM code, XBRL tag…"
+           aria-label="Search variables" autocomplete="off" spellcheck="false">
+    <div class="seg" role="group" aria-label="Panel">
+      <button type="button" data-panel="all" aria-pressed="true">Both</button>
+      <button type="button" data-panel="edgar" aria-pressed="false">EDGAR</button>
+      <button type="button" data-panel="ffiec" aria-pressed="false">FFIEC</button>
+    </div>
+    <label for="fam">Family</label>
+    <select id="fam"><option value="">all</option></select>
+    <label for="kind">Kind</label>
+    <select id="kind"><option value="">all</option></select>
+  </div>
+
+  <p class="count" id="count">Loading…</p>
+
+  <div class="scroller">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Variable</th>
+          <th scope="col">Meaning</th>
+          <th scope="col">Family</th>
+          <th scope="col">Banks with data</th>
+          <th scope="col">Window</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <p class="empty" id="empty" hidden>Nothing matches that.</p>
+
+  <footer>
+    <span>Generated <span id="generated">—</span> from
+      <a href="variables.json">variables.json</a>.</span>
+    <span><a href="./">Downloads and charts</a> ·
+      <a href="https://github.com/keithcsqueensu/bankqtr_db">Source</a></span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var rowsEl = document.getElementById("rows");
+  var countEl = document.getElementById("count");
+  var emptyEl = document.getElementById("empty");
+  var qEl = document.getElementById("q");
+  var famEl = document.getElementById("fam");
+  var kindEl = document.getElementById("kind");
+
+  var DATA = { variables: [], panels: {} };
+  var panelFilter = "all";
+  var open = Object.create(null);
+
+  function text(node, value) { node.textContent = value == null ? "" : String(value); }
+
+  function option(select, value, label) {
+    var o = document.createElement("option");
+    o.value = value;
+    o.textContent = label;
+    select.appendChild(o);
+  }
+
+  // What a search can find the variable by, prepared once at load.
+  //
+  // Two lists, because they want different matching. Prose is split into
+  // words and matched by word-start: typing "cre" should reach CRE and not
+  // every variable whose tag list happens to contain "FinancingReceivable".
+  // Identifiers stay whole -- nobody hunts an XBRL element by its middle
+  // syllable, and splitting them was exactly what made "cre" match 219 of
+  // 534 rows.
+  function index(v) {
+    var prose = [v.name, v.label, v.description, v.family, v.kind, v.panel]
+      .join(" ")
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter(Boolean);
+
+    var codes = [];
+    var d = v.definition || {};
+    ["xbrl_tags", "mdrm_items", "prefixes", "schedules", "sum_of", "minus"]
+      .forEach(function (key) {
+        if (Array.isArray(d[key])) codes = codes.concat(d[key]);
+      });
+    ["numerator", "denominator", "derived_from", "category",
+     "rolls_up_into", "since"].forEach(function (key) {
+      if (d[key]) codes.push(d[key]);
+    });
+
+    v._words = prose;
+    v._codes = codes.map(function (c) { return String(c).toLowerCase(); });
+  }
+
+  function matches(v, terms) {
+    return terms.every(function (term) {
+      for (var i = 0; i < v._words.length; i++) {
+        if (v._words[i].indexOf(term) === 0) return true;
+      }
+      for (var j = 0; j < v._codes.length; j++) {
+        if (v._codes[j].indexOf(term) === 0) return true;
+      }
+      return false;
+    });
+  }
+
+  // Everything that matched is shown; this only decides what is on screen
+  // first. A name match beats a mention in the prose, which is what makes
+  // a broad word like "cre" still open on the CRE variables.
+  function score(v, needle) {
+    if (v.name === needle) return 0;
+    if (v.name.indexOf(needle) === 0) return 1;
+    if (v.name.indexOf(needle) !== -1) return 2;
+    if (v.label.toLowerCase().indexOf(needle) !== -1) return 3;
+    for (var i = 0; i < v._codes.length; i++) {
+      if (v._codes[i].indexOf(needle) === 0) return 4;
+    }
+    return 5;
+  }
+
+  function coverageCell(v) {
+    var total = (DATA.panels[v.panel] || {}).banks || 0;
+    var pct = total ? Math.round((v.n_banks / total) * 100) : 0;
+    var cell = document.createElement("td");
+    var wrap = document.createElement("div");
+    wrap.className = "cov";
+    var track = document.createElement("div");
+    track.className = "track";
+    var fill = document.createElement("div");
+    fill.className = "fill";
+    fill.style.width = pct + "%";
+    track.appendChild(fill);
+    var n = document.createElement("span");
+    n.className = "n";
+    n.textContent = v.n_banks + " / " + total;
+    wrap.appendChild(track);
+    wrap.appendChild(n);
+    // The bar is a second encoding of the number beside it, never the only
+    // one -- colour and length alone would leave this cell unreadable to a
+    // screen reader and unusable in print.
+    wrap.setAttribute("title", v.n_cells.toLocaleString() + " populated bank-quarters");
+    cell.appendChild(wrap);
+    return cell;
+  }
+
+  function definitionList(v) {
+    var d = v.definition || {};
+    var dl = document.createElement("dl");
+    dl.className = "kv";
+
+    function add(term, node) {
+      var dt = document.createElement("dt");
+      dt.textContent = term;
+      var dd = document.createElement("dd");
+      dd.appendChild(node);
+      dl.appendChild(dt);
+      dl.appendChild(dd);
+    }
+    function codes(values) {
+      var frag = document.createDocumentFragment();
+      values.forEach(function (value, i) {
+        var c = document.createElement("code");
+        c.textContent = value;
+        frag.appendChild(c);
+        if (i < values.length - 1) frag.appendChild(document.createTextNode(", "));
+      });
+      return frag;
+    }
+    function plain(value) { return document.createTextNode(value); }
+
+    if (d.schedules) {
+      add("Schedule" + (d.schedules.length > 1 ? "s" : ""), codes(d.schedules));
+    }
+    if (d.mdrm_items) {
+      add("MDRM item" + (d.mdrm_items.length > 1 ? "s" : ""), codes(d.mdrm_items));
+    }
+    if (d.prefixes) add("Read as", codes(d.prefixes));
+    if (d.since) add("Filed from", plain(d.since));
+    if (d.xbrl_tags) add("XBRL tag candidates", codes(d.xbrl_tags));
+    if (d.category) add("Category", codes([d.category]));
+    if (d.rolls_up_into) add("Rolls up into", codes([d.rolls_up_into]));
+    if (d.numerator) {
+      add("Formula", codes([d.numerator + " / " + d.denominator +
+        (d.annualised ? "  × 4 (annualised)" : "")]));
+    }
+    if (d.sum_of) add("Sum of", codes(d.sum_of));
+    if (d.minus) add("Computed as", codes([d.minus.join(" − ")]));
+    if (d.derived_from) add("Derived from", codes([d.derived_from]));
+    if (d.bucket) add("Bucket", codes([d.bucket]));
+    if (d.vintage_year) add("Vintage", plain(String(d.vintage_year)));
+
+    add("Unit", plain(v.unit + " · " + v.kind));
+    add("Populated", plain(
+      v.n_cells.toLocaleString() + " bank-quarters across " + v.n_banks + " banks"
+    ));
+
+    var sources = Object.keys(v.sources || {});
+    if (sources.length) {
+      var mix = document.createElement("div");
+      mix.className = "src-mix";
+      sources.forEach(function (key) {
+        var s = document.createElement("span");
+        s.textContent = key + " " + v.sources[key].toLocaleString();
+        mix.appendChild(s);
+      });
+      add("Value provenance", mix);
+    }
+    return dl;
+  }
+
+  function render() {
+    var needle = qEl.value.trim().toLowerCase();
+    var family = famEl.value;
+    var kind = kindEl.value;
+
+    var terms = needle.split(/[^a-z0-9]+/).filter(Boolean);
+    var shown = DATA.variables.filter(function (v) {
+      if (panelFilter !== "all" && v.panel !== panelFilter) return false;
+      if (family && v.family !== family) return false;
+      if (kind && v.kind !== kind) return false;
+      return !terms.length || matches(v, terms);
+    });
+
+    if (terms.length) {
+      shown = shown.slice().sort(function (a, b) {
+        return score(a, needle) - score(b, needle) || (a.name < b.name ? -1 : 1);
+      });
+    }
+
+    rowsEl.replaceChildren();
+    var frag = document.createDocumentFragment();
+
+    shown.forEach(function (v) {
+      var tr = document.createElement("tr");
+      tr.className = "row";
+      tr.id = "v-" + v.panel + "-" + v.name;
+      if (open[tr.id]) tr.classList.add("open");
+
+      var tdName = document.createElement("td");
+      var button = document.createElement("button");
+      button.type = "button";
+      button.className = "name";
+      button.textContent = v.name;
+      button.setAttribute("aria-expanded", open[tr.id] ? "true" : "false");
+      button.addEventListener("click", function () {
+        open[tr.id] = !open[tr.id];
+        render();
+        var back = document.getElementById(tr.id);
+        if (back) back.querySelector(".name").focus();
+      });
+      tdName.appendChild(button);
+      tr.appendChild(tdName);
+
+      var tdLabel = document.createElement("td");
+      tdLabel.className = "label";
+      text(tdLabel, v.label);
+      tr.appendChild(tdLabel);
+
+      var tdFam = document.createElement("td");
+      var tag = document.createElement("span");
+      tag.className = "tag";
+      tag.textContent = (v.panel === "edgar" ? "EDGAR" : "FFIEC") + " · " + v.family;
+      tdFam.appendChild(tag);
+      tr.appendChild(tdFam);
+
+      tr.appendChild(coverageCell(v));
+
+      var tdWin = document.createElement("td");
+      tdWin.className = "win";
+      text(tdWin, v.first_q ? v.first_q + " – " + v.last_q : "—");
+      tr.appendChild(tdWin);
+
+      frag.appendChild(tr);
+
+      if (open[tr.id]) {
+        var detail = document.createElement("tr");
+        detail.className = "detail";
+        var cell = document.createElement("td");
+        cell.colSpan = 5;
+        var p = document.createElement("p");
+        p.textContent = v.description;
+        cell.appendChild(p);
+        cell.appendChild(definitionList(v));
+        detail.appendChild(cell);
+        frag.appendChild(detail);
+      }
+    });
+
+    rowsEl.appendChild(frag);
+    emptyEl.hidden = shown.length > 0;
+    countEl.textContent =
+      shown.length.toLocaleString() + " of " +
+      DATA.variables.length.toLocaleString() + " variables";
+  }
+
+  function boot(payload) {
+    DATA = payload;
+    DATA.variables.forEach(index);
+
+    var families = [];
+    var kinds = [];
+    DATA.variables.forEach(function (v) {
+      if (families.indexOf(v.family) === -1) families.push(v.family);
+      if (kinds.indexOf(v.kind) === -1) kinds.push(v.kind);
+    });
+    families.sort().forEach(function (f) { option(famEl, f, f); });
+    kinds.sort().forEach(function (k) { option(kindEl, k, k); });
+
+    text(document.getElementById("generated"),
+         (DATA.generated_utc || "").replace("T", " ").replace("Z", " UTC"));
+
+    // A link to #v-edgar-loans_total should land on that row, open.
+    var hash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    if (hash) {
+      open[hash] = true;
+      var match = DATA.variables.filter(function (v) {
+        return "v-" + v.panel + "-" + v.name === hash;
+      })[0];
+      if (match) qEl.value = match.name;
+    }
+
+    render();
+    if (hash) {
+      var row = document.getElementById(hash);
+      if (row) row.scrollIntoView({ block: "center" });
+    }
+  }
+
+  qEl.addEventListener("input", render);
+  famEl.addEventListener("change", render);
+  kindEl.addEventListener("change", render);
+  Array.prototype.forEach.call(
+    document.querySelectorAll(".seg button"),
+    function (b) {
+      b.addEventListener("click", function () {
+        panelFilter = b.dataset.panel;
+        Array.prototype.forEach.call(
+          document.querySelectorAll(".seg button"),
+          function (other) {
+            other.setAttribute("aria-pressed", other === b ? "true" : "false");
+          }
+        );
+        render();
+      });
+    }
+  );
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "/" && document.activeElement !== qEl) {
+      e.preventDefault();
+      qEl.focus();
+      qEl.select();
+    }
+  });
+
+  fetch("variables.json")
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(boot)
+    .catch(function (err) {
+      countEl.textContent =
+        "Could not load variables.json (" + err.message + ").";
+    });
+})();
+</script>
+</body>
+</html>

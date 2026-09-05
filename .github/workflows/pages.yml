@@ -54,6 +54,8 @@ jobs:
           set -e
           for f in \
             docs/index.html \
+            docs/dictionary.html \
+            docs/variables.json \
             docs/data_summary.json \
             docs/data/call_panel.parquet docs/data/call_panel.csv \
             docs/data/panel.parquet docs/data/panel.csv \

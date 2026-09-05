@@ -94,6 +94,32 @@ open it in VS Code or your own Jupyter — the `examples` group installs the ker
 the notebook is committed with its outputs, so it also reads fine without running at all.
 The home bank is a variable in the first cell.
 
+## Looking a variable up
+
+**[The variable dictionary](https://keithcsqueensu.github.io/bankqtr_db/dictionary.html)**
+on the site lists every column in both panels — searchable by name, by meaning,
+by MDRM item or by XBRL element. Each entry says what the number is, how it is
+defined, and how many banks and quarters carry it:
+
+| Panel | An entry says |
+|---|---|
+| FFIEC | the schedule and MDRM item it is read from, which prefix wins (`RCFD` before `RCON`, and why that matters), and the quarter it was first filed |
+| EDGAR | the XBRL tag candidates in priority order, the axis and category it is sliced on, and what it rolls up into |
+| Both | for a ratio or a roll-up, the exact formula over other columns; and the populated cell count, bank count and window from the built panel |
+
+It is generated from the definitions the build itself uses — `variables.py`,
+`taxonomy.py`, `mdrm.py` — so it cannot drift from the panels the way a
+hand-written page does:
+
+```bash
+uv run python scripts/build_dictionary.py            # writes docs/variables.json
+uv run python scripts/build_dictionary.py --check    # CI: complete and current?
+```
+
+Two things fail that build rather than shipping quietly: a column with no
+definition, and a category the taxonomy has but nobody has named. Both would
+otherwise reach the page as an omission or a raw slug, and both are silent.
+
 ## Browsing the variables
 
 Before a model there is a prior question — *which* of these variables is worth
@@ -182,7 +208,7 @@ uv run pytest tests/ -q
 uv run ruff check .
 ```
 
-<!--stats:tests-->399<!--/stats--> tests across both builds. Every one corresponds to a defect that produced
+<!--stats:tests-->410<!--/stats--> tests across both builds. Every one corresponds to a defect that produced
 **plausible but wrong** numbers during development — the dangerous kind, since
 nothing raises and the panel still renders. The catalogue of what they guard is
 in the wiki: **[Traps](https://github.com/keithcsqueensu/bankqtr_db/wiki/Traps)**.
