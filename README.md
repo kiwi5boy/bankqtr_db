@@ -94,6 +94,46 @@ open it in VS Code or your own Jupyter — the `examples` group installs the ker
 the notebook is committed with its outputs, so it also reads fine without running at all.
 The home bank is a variable in the first cell.
 
+## Browsing the variables
+
+Before a model there is a prior question — *which* of these variables is worth
+modelling. `apps/explorer.py` is a [marimo](https://marimo.io) app for exactly
+that, and it assumes nothing about what you intend to fit:
+
+```bash
+uv sync --group app
+uv run --group app marimo run apps/explorer.py --no-sandbox    # or `marimo edit`
+```
+
+`--no-sandbox` is not optional noise: the notebook carries inline PEP 723
+metadata so the WASM export knows what to install in the browser, and without
+the flag marimo stops to ask whether to build a throwaway venv from it. The
+`app` group is already that environment.
+
+It reads `data/out` when there is a build there and falls back to the committed
+`docs/data`. Three passes, in order:
+
+| Pass | Answers |
+|---|---|
+| **What is here** | per variable, how many banks carry it and how well, over what window. `n/a` is kept out of the bar and out of the median — a custody bank with no card book is not a gap. |
+| **What one variable is made of** | its provenance mix (`xbrl` / `html` / `ir_supplement` / `derived_ir`), the bank-quarters it actually populates, and its path against the peer band with the seams drawn on. |
+| **What a set of variables leaves you** | the complete-case sample for a chosen set, and what each further candidate would cost in bank-quarters before you add it. |
+
+That third pass is the one that decides a model. The usable sample is the
+*intersection* of the set's coverage, which is not the coverage of its weakest
+member: two variables each 80% populated leave anywhere between 60% and 80%
+depending on whether the same banks are missing both. The explorer computes it
+rather than inferring it, because the inference is always optimistic.
+
+To hand it to someone without a Python environment, export it as a static
+WebAssembly site — the notebook, its modules and both panels, running in the
+browser under Pyodide:
+
+```bash
+uv run --group app python scripts/export_explorer.py --out build/explorer
+python -m http.server --directory build/explorer      # must be served, not opened
+```
+
 ## Read this before using the data
 
 Five things will produce a wrong answer if you skip them. None is a bug; each is
@@ -142,7 +182,7 @@ uv run pytest tests/ -q
 uv run ruff check .
 ```
 
-<!--stats:tests-->380<!--/stats--> tests across both builds. Every one corresponds to a defect that produced
+<!--stats:tests-->399<!--/stats--> tests across both builds. Every one corresponds to a defect that produced
 **plausible but wrong** numbers during development — the dangerous kind, since
 nothing raises and the panel still renders. The catalogue of what they guard is
 in the wiki: **[Traps](https://github.com/keithcsqueensu/bankqtr_db/wiki/Traps)**.
@@ -185,7 +225,9 @@ bankqtr_db/     the EDGAR build   (filings, edgar, instance, xbrl, taxonomy,
                                    ir_extract, reconcile)
 callrpt_db/     the FFIEC build   (cdr, nic, lineage, mdrm, schedules, panel,
                                    crosscheck, tfr)
+apps/           the variable explorer  (explore = the counting, viz = the
+                                       charts, explorer = the marimo layout)
 scripts/        fetch_* and build_* entry points
 tests/          one test per defect (count under Testing, above)
-docs/           the GitHub Pages site: downloads and charts
+docs/           the GitHub Pages site: downloads, charts, variable dictionary
 ```

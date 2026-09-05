@@ -24,6 +24,15 @@ docs/data/
 # notebook's kernel was started in.
 _data/
 
+# marimo's per-notebook session cache. Written beside the notebook whenever
+# it is opened, holds the last run's cell outputs, and is not part of it.
+__marimo__/
+
+# The explorer's WASM bundle, where scripts/export_explorer.py puts it by
+# default. It is ~30 MB of marimo runtime plus a copy of both panels, all of
+# it regenerable from one command, and none of it reviewable in a diff.
+/build/
+
 # Scratch extraction grids from analysis runs. Every parquet a build produces
 # lands under data/; one at the repository root is an accident.
 /*.parquet

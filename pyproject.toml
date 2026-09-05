@@ -22,6 +22,10 @@ build-backend = "hatchling.build"
 packages = ["bankqtr_db", "callrpt_db"]
 
 [dependency-groups]
+app = [
+    "altair>=6.2.2",
+    "marimo>=0.24.0",
+]
 dev = [
     "pytest>=9.1.1",
 ]
