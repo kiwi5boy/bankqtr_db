@@ -37,27 +37,25 @@ def _date(value: str) -> dt.date:
 def _fetch_tfr(periods: list[str], *, refresh: bool = False) -> None:
     """Cache BankFind financials for the depositories that filed no Call Report.
 
-    Which institutions those are is a property of the panel -- it depends on
-    the lineages, and so on the universe -- so this reads the built panel's
-    own ``insured_not_filing`` column rather than deciding again.  A panel has
-    therefore to exist first, which is the ordinary order anyway: build once,
-    fetch the gap, build again with it.
+    Which institutions those are depends on the lineages, and so on the
+    universe.  This asks ``panel.unfiled_depositories`` -- the question
+    ``build_call_panel.py --tfr`` itself asks -- rather than reading a built
+    panel's ``insured_not_filing`` column.  The column is narrower: a quarter
+    in which none of a firm's charters filed has no row to carry it, so a firm
+    whose only depository was a thrift (Ameriprise, 2006-2011) was never
+    fetched, and the build then warned that its certificate was not cached.
+
+    The universe is widened to the comparators so a ``--comparators`` build
+    is covered too.  The cache is per certificate, so the superset costs a few
+    requests once and satisfies every narrower build.
     """
-    import polars as pl
+    from callrpt_db import panel, tfr
 
-    from callrpt_db import tfr
-    from callrpt_db.config import OUT
-
-    path = OUT / "call_panel.parquet"
-    if not path.exists():
-        log.error(
-            "--tfr needs %s to know which depositories are missing; "
-            "run build_call_panel.py first",
-            path.name,
-        )
-        return
-    panel = pl.read_parquet(path)
-    _, info = tfr.backfill(panel, periods, refresh=refresh)
+    holdings = panel.select_holdings(comparators=True)
+    gap = panel.unfiled_depositories(
+        periods, holdings, panel.window_lineages(periods, holdings)
+    )
+    _, info = tfr.backfill(gap, periods, refresh=refresh)
     log.info(
         "tfr: %d rows cached for %d of %d non-filing depositories; identities %s",
         info.get("rows", 0),
@@ -88,8 +86,8 @@ def main(argv: list[str] | None = None) -> int:
         help=(
             "also fetch FDIC BankFind financials for the insured depositories "
             "that filed a Thrift Financial Report rather than a Call Report "
-            "(WaMu, Golden West, Sovereign, IndyMac); needs a built panel to "
-            "know which they are"
+            "(WaMu, Golden West, Sovereign, IndyMac); reads only the cached "
+            "Call Reports and NIC files, so no panel need be built first"
         ),
     )
     args = ap.parse_args(argv)

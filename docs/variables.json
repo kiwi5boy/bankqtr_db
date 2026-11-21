@@ -1,21 +1,21 @@
 {
- "generated_utc": "2026-09-05T13:42:51Z",
+ "generated_utc": "2026-11-21T20:04:16Z",
  "panels": {
   "edgar": {
    "source": "SEC EDGAR",
-   "rows": 1648,
+   "rows": 1676,
    "banks": 31,
    "variables": 271,
    "first_q": "2013Q1",
-   "last_q": "2026Q2"
+   "last_q": "2026Q3"
   },
   "ffiec": {
    "source": "FFIEC Call Reports",
-   "rows": 3763,
+   "rows": 3798,
    "banks": 38,
    "variables": 263,
    "first_q": "2001Q1",
-   "last_q": "2026Q2"
+   "last_q": "2026Q3"
   }
  },
  "variables": [
@@ -42,7 +42,7 @@
    "n_cells": 185,
    "n_banks": 9,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 185
    }
@@ -67,12 +67,12 @@
     "category": "ci",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 186,
+   "n_cells": 189,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 186
+    "xbrl": 189
    }
   },
   {
@@ -95,12 +95,12 @@
     "category": "commercial_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 1178,
+   "n_cells": 1198,
    "n_banks": 27,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1178
+    "xbrl": 1198
    }
   },
   {
@@ -126,7 +126,7 @@
    "n_cells": 115,
    "n_banks": 5,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 115
    }
@@ -151,12 +151,12 @@
     "category": "consumer_other",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 278,
+   "n_cells": 284,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 278
+    "xbrl": 284
    }
   },
   {
@@ -179,12 +179,12 @@
     "category": "consumer_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 917,
+   "n_cells": 931,
    "n_banks": 22,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 917
+    "xbrl": 931
    }
   },
   {
@@ -207,12 +207,12 @@
     "category": "cre_investor",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 123,
+   "n_cells": 125,
    "n_banks": 3,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 123
+    "xbrl": 125
    }
   },
   {
@@ -235,12 +235,12 @@
     "category": "cre_total",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 544,
+   "n_cells": 553,
    "n_banks": 16,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 544
+    "xbrl": 553
    }
   },
   {
@@ -263,12 +263,12 @@
     "category": "credit_card",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 466,
+   "n_cells": 470,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 466
+    "xbrl": 470
    }
   },
   {
@@ -291,12 +291,12 @@
     "category": "financial_institutions",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 37,
+   "n_cells": 38,
    "n_banks": 1,
    "first_q": "2015Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 37
+    "xbrl": 38
    }
   },
   {
@@ -319,12 +319,12 @@
     "category": "fund_finance",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 46,
+   "n_cells": 48,
    "n_banks": 2,
    "first_q": "2020Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 46
+    "xbrl": 48
    }
   },
   {
@@ -347,12 +347,12 @@
     "category": "home_equity",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 237,
+   "n_cells": 240,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 237
+    "xbrl": 240
    }
   },
   {
@@ -375,12 +375,12 @@
     "category": "lease",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 180,
+   "n_cells": 181,
    "n_banks": 5,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 180
+    "xbrl": 181
    }
   },
   {
@@ -406,7 +406,7 @@
    "n_cells": 50,
    "n_banks": 2,
    "first_q": "2014Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 50
    }
@@ -420,12 +420,12 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 7,
+   "n_cells": 8,
    "n_banks": 1,
    "first_q": "2024Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "ir_supplement": 7
+    "ir_supplement": 8
    }
   },
   {
@@ -448,12 +448,12 @@
     "category": "other",
     "rolls_up_into": "total"
    },
-   "n_cells": 268,
+   "n_cells": 273,
    "n_banks": 10,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 268
+    "xbrl": 273
    }
   },
   {
@@ -476,12 +476,12 @@
     "category": "resi_mortgage",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 615,
+   "n_cells": 625,
    "n_banks": 17,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 615
+    "xbrl": 625
    }
   },
   {
@@ -504,12 +504,12 @@
     "category": "securities_based",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 90,
+   "n_cells": 93,
    "n_banks": 4,
    "first_q": "2015Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 90
+    "xbrl": 93
    }
   },
   {
@@ -588,13 +588,13 @@
     "category": "total",
     "rolls_up_into": null
    },
-   "n_cells": 1627,
+   "n_cells": 1655,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1612,
-    "ir_supplement": 15
+    "xbrl": 1639,
+    "ir_supplement": 16
    }
   },
   {
@@ -616,12 +616,12 @@
     "category": "auto",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 296,
+   "n_cells": 301,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 296
+    "xbrl": 301
    }
   },
   {
@@ -643,12 +643,12 @@
     "category": "ci",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 363,
+   "n_cells": 374,
    "n_banks": 15,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 363
+    "xbrl": 374
    }
   },
   {
@@ -697,12 +697,12 @@
     "category": "commercial_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 1160,
+   "n_cells": 1182,
    "n_banks": 28,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1160
+    "xbrl": 1182
    }
   },
   {
@@ -727,7 +727,7 @@
    "n_cells": 177,
    "n_banks": 9,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 177
    }
@@ -751,12 +751,12 @@
     "category": "consumer_other",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 470,
+   "n_cells": 486,
    "n_banks": 21,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 470
+    "xbrl": 486
    }
   },
   {
@@ -778,12 +778,12 @@
     "category": "consumer_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 936,
+   "n_cells": 952,
    "n_banks": 23,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 936
+    "xbrl": 952
    }
   },
   {
@@ -805,12 +805,12 @@
     "category": "cre_investor",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 138,
+   "n_cells": 140,
    "n_banks": 4,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 138
+    "xbrl": 140
    }
   },
   {
@@ -832,12 +832,12 @@
     "category": "cre_owner_occupied",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 65,
+   "n_cells": 68,
    "n_banks": 4,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 65
+    "xbrl": 68
    }
   },
   {
@@ -859,12 +859,12 @@
     "category": "cre_total",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 606,
+   "n_cells": 622,
    "n_banks": 20,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 606
+    "xbrl": 622
    }
   },
   {
@@ -886,12 +886,12 @@
     "category": "credit_card",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 615,
+   "n_cells": 625,
    "n_banks": 16,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 615
+    "xbrl": 625
    }
   },
   {
@@ -913,12 +913,12 @@
     "category": "financial_institutions",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 26,
+   "n_cells": 27,
    "n_banks": 2,
    "first_q": "2018Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 26
+    "xbrl": 27
    }
   },
   {
@@ -940,12 +940,12 @@
     "category": "fund_finance",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 4,
+   "n_cells": 7,
    "n_banks": 1,
    "first_q": "2025Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 4
+    "xbrl": 7
    }
   },
   {
@@ -967,12 +967,12 @@
     "category": "home_equity",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 394,
+   "n_cells": 403,
    "n_banks": 17,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 394
+    "xbrl": 403
    }
   },
   {
@@ -994,12 +994,12 @@
     "category": "lease",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 217,
+   "n_cells": 219,
    "n_banks": 11,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 217
+    "xbrl": 219
    }
   },
   {
@@ -1021,12 +1021,12 @@
     "category": "multifamily",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 28,
+   "n_cells": 30,
    "n_banks": 2,
    "first_q": "2023Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 28
+    "xbrl": 30
    }
   },
   {
@@ -1075,12 +1075,12 @@
     "category": "other",
     "rolls_up_into": "total"
    },
-   "n_cells": 231,
+   "n_cells": 237,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 231
+    "xbrl": 237
    }
   },
   {
@@ -1102,12 +1102,12 @@
     "category": "resi_mortgage",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 763,
+   "n_cells": 779,
    "n_banks": 25,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 763
+    "xbrl": 779
    }
   },
   {
@@ -1129,12 +1129,12 @@
     "category": "securities_based",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 58,
+   "n_cells": 60,
    "n_banks": 3,
    "first_q": "2019Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 58
+    "xbrl": 60
    }
   },
   {
@@ -1159,7 +1159,7 @@
    "n_cells": 28,
    "n_banks": 2,
    "first_q": "2023Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 28
    }
@@ -1183,12 +1183,12 @@
     "category": "student",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 88,
+   "n_cells": 89,
    "n_banks": 5,
    "first_q": "2014Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 88
+    "xbrl": 89
    }
   },
   {
@@ -1210,12 +1210,12 @@
     "category": "total",
     "rolls_up_into": null
    },
-   "n_cells": 1506,
+   "n_cells": 1534,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1506
+    "xbrl": 1534
    }
   },
   {
@@ -1251,12 +1251,12 @@
     "axis": "credit_quality",
     "category": "criticized"
    },
-   "n_cells": 348,
+   "n_cells": 347,
    "n_banks": 11,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 339,
+    "xbrl": 338,
     "html": 9
    }
   },
@@ -1272,12 +1272,12 @@
     "axis": "credit_quality",
     "category": "doubtful"
    },
-   "n_cells": 285,
+   "n_cells": 287,
    "n_banks": 14,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 275,
+    "xbrl": 277,
     "html": 9,
     "ir_supplement": 1
    }
@@ -1294,12 +1294,12 @@
     "axis": "credit_quality",
     "category": "investment_grade"
    },
-   "n_cells": 207,
+   "n_cells": 206,
    "n_banks": 7,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 207
+    "xbrl": 206
    }
   },
   {
@@ -1314,12 +1314,12 @@
     "axis": "credit_quality",
     "category": "non_investment_grade"
    },
-   "n_cells": 174,
+   "n_cells": 173,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 174
+    "xbrl": 173
    }
   },
   {
@@ -1357,7 +1357,7 @@
    "n_cells": 144,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 144
    }
@@ -1374,12 +1374,12 @@
     "axis": "credit_quality",
     "category": "pass"
    },
-   "n_cells": 696,
+   "n_cells": 698,
    "n_banks": 22,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 677,
+    "xbrl": 679,
     "html": 19
    }
   },
@@ -1395,12 +1395,12 @@
     "axis": "credit_quality",
     "category": "performing"
    },
-   "n_cells": 86,
+   "n_cells": 84,
    "n_banks": 5,
    "first_q": "2013Q1",
    "last_q": "2023Q4",
    "sources": {
-    "xbrl": 86
+    "xbrl": 84
    }
   },
   {
@@ -1412,12 +1412,12 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 1113,
+   "n_cells": 1116,
    "n_banks": 29,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1113
+    "xbrl": 1116
    }
   },
   {
@@ -1435,7 +1435,7 @@
    "n_cells": 465,
    "n_banks": 18,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 441,
     "html": 23,
@@ -1457,7 +1457,7 @@
    "n_cells": 444,
    "n_banks": 17,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 427,
     "html": 16,
@@ -1476,12 +1476,12 @@
     "axis": "credit_quality",
     "category": "unrated"
    },
-   "n_cells": 107,
+   "n_cells": 108,
    "n_banks": 5,
    "first_q": "2014Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 107
+    "xbrl": 108
    }
   },
   {
@@ -1496,12 +1496,12 @@
     "axis": "credit_quality",
     "category": "fico_near_prime"
    },
-   "n_cells": 20,
+   "n_cells": 21,
    "n_banks": 1,
    "first_q": "2020Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 20
+    "xbrl": 21
    }
   },
   {
@@ -1516,12 +1516,12 @@
     "axis": "credit_quality",
     "category": "fico_prime"
    },
-   "n_cells": 104,
+   "n_cells": 106,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 104
+    "xbrl": 106
    }
   },
   {
@@ -1536,12 +1536,12 @@
     "axis": "credit_quality",
     "category": "fico_subprime"
    },
-   "n_cells": 141,
+   "n_cells": 144,
    "n_banks": 10,
    "first_q": "2013Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 141
+    "xbrl": 144
    }
   },
   {
@@ -1556,12 +1556,12 @@
     "axis": "credit_quality",
     "category": "internal_grade_high"
    },
-   "n_cells": 27,
+   "n_cells": 28,
    "n_banks": 2,
    "first_q": "2014Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 27
+    "xbrl": 28
    }
   },
   {
@@ -1579,7 +1579,7 @@
    "n_cells": 70,
    "n_banks": 2,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 70
    }
@@ -1599,7 +1599,7 @@
    "n_cells": 70,
    "n_banks": 2,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 70
    }
@@ -1617,12 +1617,12 @@
      "Deposits"
     ]
    },
-   "n_cells": 1556,
+   "n_cells": 1583,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1556
+    "xbrl": 1583
    }
   },
   {
@@ -1636,12 +1636,12 @@
    "definition": {
     "derived_from": "deposits"
    },
-   "n_cells": 1516,
+   "n_cells": 1543,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1516
+    "xbrl": 1543
    }
   },
   {
@@ -1655,12 +1655,12 @@
    "definition": {
     "derived_from": "deposits"
    },
-   "n_cells": 1432,
+   "n_cells": 1459,
    "n_banks": 31,
    "first_q": "2013Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1432
+    "xbrl": 1459
    }
   },
   {
@@ -1739,12 +1739,12 @@
     "bucket": "dpd_30_89",
     "category": "cre_nonfarm_nonres"
    },
-   "n_cells": 78,
+   "n_cells": 77,
    "n_banks": 13,
    "first_q": "2013Q4",
    "last_q": "2025Q4",
    "sources": {
-    "html": 78
+    "html": 77
    }
   },
   {
@@ -1760,12 +1760,12 @@
     "bucket": "dpd_30_89",
     "category": "credit_card"
    },
-   "n_cells": 40,
+   "n_cells": 39,
    "n_banks": 6,
    "first_q": "2013Q4",
    "last_q": "2025Q4",
    "sources": {
-    "html": 40
+    "html": 39
    }
   },
   {
@@ -1847,7 +1847,7 @@
    "n_cells": 650,
    "n_banks": 22,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 612,
     "derived_ir": 38
@@ -1866,12 +1866,12 @@
     "bucket": "dpd_30_89",
     "category": "resi_mortgage"
    },
-   "n_cells": 86,
+   "n_cells": 85,
    "n_banks": 13,
    "first_q": "2013Q4",
    "last_q": "2025Q4",
    "sources": {
-    "html": 86
+    "html": 85
    }
   },
   {
@@ -1950,12 +1950,12 @@
     "bucket": "dpd_90_plus",
     "category": "cre_nonfarm_nonres"
    },
-   "n_cells": 56,
+   "n_cells": 55,
    "n_banks": 10,
    "first_q": "2013Q4",
    "last_q": "2025Q4",
    "sources": {
-    "html": 56
+    "html": 55
    }
   },
   {
@@ -1971,12 +1971,12 @@
     "bucket": "dpd_90_plus",
     "category": "credit_card"
    },
-   "n_cells": 36,
+   "n_cells": 35,
    "n_banks": 5,
    "first_q": "2013Q4",
    "last_q": "2025Q4",
    "sources": {
-    "html": 36
+    "html": 35
    }
   },
   {
@@ -2055,12 +2055,12 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 1367,
+   "n_cells": 1380,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1363,
+    "xbrl": 1376,
     "derived_ir": 4
    }
   },
@@ -2077,12 +2077,12 @@
     "bucket": "dpd_90_plus",
     "category": "resi_mortgage"
    },
-   "n_cells": 65,
+   "n_cells": 64,
    "n_banks": 10,
    "first_q": "2013Q4",
    "last_q": "2025Q4",
    "sources": {
-    "html": 65
+    "html": 64
    }
   },
   {
@@ -2105,13 +2105,13 @@
     "category": "auto",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 580,
+   "n_cells": 586,
    "n_banks": 16,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 560,
-    "ir_supplement": 12,
+    "xbrl": 561,
+    "ir_supplement": 17,
     "html": 8
    }
   },
@@ -2124,12 +2124,12 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 1528,
+   "n_cells": 1551,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1528
+    "xbrl": 1551
    }
   },
   {
@@ -2141,12 +2141,12 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 1528,
+   "n_cells": 1551,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1528
+    "xbrl": 1551
    }
   },
   {
@@ -2169,14 +2169,14 @@
     "category": "ci",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 760,
+   "n_cells": 771,
    "n_banks": 23,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 708,
+    "xbrl": 713,
     "html": 42,
-    "ir_supplement": 10
+    "ir_supplement": 16
    }
   },
   {
@@ -2190,12 +2190,12 @@
    "definition": {
     "derived_from": "loans_ci"
    },
-   "n_cells": 658,
+   "n_cells": 657,
    "n_banks": 20,
    "first_q": "2013Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 658
+    "xbrl": 657
    }
   },
   {
@@ -2209,12 +2209,12 @@
    "definition": {
     "derived_from": "loans_ci"
    },
-   "n_cells": 615,
+   "n_cells": 613,
    "n_banks": 20,
    "first_q": "2014Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 615
+    "xbrl": 613
    }
   },
   {
@@ -2237,12 +2237,12 @@
     "category": "commercial_other",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 54,
+   "n_cells": 55,
    "n_banks": 3,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 54
+    "xbrl": 55
    }
   },
   {
@@ -2265,13 +2265,13 @@
     "category": "commercial_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 1228,
+   "n_cells": 1240,
    "n_banks": 27,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1211,
-    "ir_supplement": 17
+    "xbrl": 1220,
+    "ir_supplement": 20
    }
   },
   {
@@ -2294,14 +2294,14 @@
     "category": "construction",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 477,
+   "n_cells": 480,
    "n_banks": 18,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 430,
-    "html": 46,
-    "ir_supplement": 1
+    "xbrl": 432,
+    "html": 45,
+    "ir_supplement": 3
    }
   },
   {
@@ -2318,7 +2318,7 @@
    "n_cells": 377,
    "n_banks": 15,
    "first_q": "2013Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 377
    }
@@ -2337,7 +2337,7 @@
    "n_cells": 353,
    "n_banks": 15,
    "first_q": "2014Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 353
    }
@@ -2362,12 +2362,12 @@
     "category": "consumer_other",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 840,
+   "n_cells": 848,
    "n_banks": 25,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 840
+    "xbrl": 848
    }
   },
   {
@@ -2390,13 +2390,13 @@
     "category": "consumer_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 928,
+   "n_cells": 934,
    "n_banks": 24,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 926,
-    "ir_supplement": 2
+    "xbrl": 928,
+    "ir_supplement": 6
    }
   },
   {
@@ -2419,12 +2419,12 @@
     "category": "cre_investor",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 204,
+   "n_cells": 207,
    "n_banks": 7,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 204
+    "xbrl": 207
    }
   },
   {
@@ -2447,13 +2447,13 @@
     "category": "cre_owner_occupied",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 147,
+   "n_cells": 149,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 119,
-    "html": 24,
+    "xbrl": 122,
+    "html": 23,
     "ir_supplement": 4
    }
   },
@@ -2477,14 +2477,14 @@
     "category": "cre_total",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 1172,
+   "n_cells": 1183,
    "n_banks": 26,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1153,
-    "html": 17,
-    "ir_supplement": 2
+    "xbrl": 1159,
+    "html": 16,
+    "ir_supplement": 8
    }
   },
   {
@@ -2498,12 +2498,12 @@
    "definition": {
     "derived_from": "loans_cre_total"
    },
-   "n_cells": 1095,
+   "n_cells": 1090,
    "n_banks": 26,
    "first_q": "2013Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1095
+    "xbrl": 1090
    }
   },
   {
@@ -2517,12 +2517,12 @@
    "definition": {
     "derived_from": "loans_cre_total"
    },
-   "n_cells": 1029,
+   "n_cells": 1021,
    "n_banks": 26,
    "first_q": "2014Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1029
+    "xbrl": 1021
    }
   },
   {
@@ -2545,14 +2545,14 @@
     "category": "credit_card",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 793,
+   "n_cells": 800,
    "n_banks": 23,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 783,
-    "html": 7,
-    "ir_supplement": 3
+    "xbrl": 784,
+    "ir_supplement": 9,
+    "html": 7
    }
   },
   {
@@ -2575,12 +2575,12 @@
     "category": "financial_institutions",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 112,
+   "n_cells": 113,
    "n_banks": 3,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 112
+    "xbrl": 113
    }
   },
   {
@@ -2603,12 +2603,12 @@
     "category": "fund_finance",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 55,
+   "n_cells": 59,
    "n_banks": 4,
    "first_q": "2019Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 55
+    "xbrl": 59
    }
   },
   {
@@ -2631,13 +2631,13 @@
     "category": "home_equity",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 811,
+   "n_cells": 816,
    "n_banks": 22,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 786,
-    "ir_supplement": 13,
+    "xbrl": 789,
+    "ir_supplement": 15,
     "html": 12
    }
   },
@@ -2661,14 +2661,14 @@
     "category": "lease",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 571,
+   "n_cells": 570,
    "n_banks": 17,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 520,
-    "html": 35,
-    "ir_supplement": 16
+    "xbrl": 515,
+    "html": 34,
+    "ir_supplement": 21
    }
   },
   {
@@ -2691,13 +2691,13 @@
     "category": "multifamily",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 203,
+   "n_cells": 202,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 147,
-    "html": 45,
+    "xbrl": 148,
+    "html": 43,
     "ir_supplement": 11
    }
   },
@@ -2715,7 +2715,7 @@
    "n_cells": 134,
    "n_banks": 4,
    "first_q": "2013Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 134
    }
@@ -2734,7 +2734,7 @@
    "n_cells": 129,
    "n_banks": 5,
    "first_q": "2014Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 129
    }
@@ -2759,12 +2759,12 @@
     "category": "municipal",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 171,
+   "n_cells": 172,
    "n_banks": 5,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 171
+    "xbrl": 172
    }
   },
   {
@@ -2776,12 +2776,12 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 41,
+   "n_cells": 43,
    "n_banks": 5,
    "first_q": "2013Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "ir_supplement": 31,
+    "ir_supplement": 33,
     "html": 10
    }
   },
@@ -2805,12 +2805,12 @@
     "category": "other",
     "rolls_up_into": "total"
    },
-   "n_cells": 580,
+   "n_cells": 582,
    "n_banks": 17,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 580
+    "xbrl": 582
    }
   },
   {
@@ -2833,14 +2833,14 @@
     "category": "resi_mortgage",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 1156,
+   "n_cells": 1165,
    "n_banks": 27,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1143,
+    "xbrl": 1146,
     "html": 11,
-    "ir_supplement": 2
+    "ir_supplement": 8
    }
   },
   {
@@ -2863,12 +2863,12 @@
     "category": "securities_based",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 198,
+   "n_cells": 199,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 198
+    "xbrl": 199
    }
   },
   {
@@ -2891,12 +2891,13 @@
     "category": "small_business",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 82,
+   "n_cells": 83,
    "n_banks": 2,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 82
+    "xbrl": 82,
+    "ir_supplement": 1
    }
   },
   {
@@ -2919,12 +2920,12 @@
     "category": "student",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 166,
+   "n_cells": 161,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 166
+    "xbrl": 161
    }
   },
   {
@@ -2940,13 +2941,13 @@
     "denominator": "assets",
     "annualised": false
    },
-   "n_cells": 1630,
+   "n_cells": 1658,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1629,
-    "derived_ir": 1
+    "xbrl": 1655,
+    "derived_ir": 3
    }
   },
   {
@@ -2962,13 +2963,13 @@
     "denominator": "deposits",
     "annualised": false
    },
-   "n_cells": 1545,
+   "n_cells": 1572,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1544,
-    "derived_ir": 1
+    "xbrl": 1569,
+    "derived_ir": 3
    }
   },
   {
@@ -2991,13 +2992,13 @@
     "category": "total",
     "rolls_up_into": null
    },
-   "n_cells": 1630,
+   "n_cells": 1658,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1629,
-    "ir_supplement": 1
+    "xbrl": 1655,
+    "ir_supplement": 3
    }
   },
   {
@@ -3011,12 +3012,12 @@
    "definition": {
     "derived_from": "loans_total"
    },
-   "n_cells": 1594,
+   "n_cells": 1619,
    "n_banks": 31,
    "first_q": "2013Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1594
+    "xbrl": 1619
    }
   },
   {
@@ -3030,12 +3031,12 @@
    "definition": {
     "derived_from": "loans_total"
    },
-   "n_cells": 1502,
+   "n_cells": 1526,
    "n_banks": 31,
    "first_q": "2014Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1502
+    "xbrl": 1526
    }
   },
   {
@@ -3051,13 +3052,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 760,
+   "n_cells": 771,
    "n_banks": 23,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 708,
-    "derived_ir": 52
+    "xbrl": 713,
+    "derived_ir": 58
    }
   },
   {
@@ -3095,13 +3096,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 1228,
+   "n_cells": 1240,
    "n_banks": 27,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1211,
-    "derived_ir": 17
+    "xbrl": 1220,
+    "derived_ir": 20
    }
   },
   {
@@ -3117,13 +3118,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 477,
+   "n_cells": 480,
    "n_banks": 18,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 430,
-    "derived_ir": 47
+    "xbrl": 432,
+    "derived_ir": 48
    }
   },
   {
@@ -3139,13 +3140,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 928,
+   "n_cells": 934,
    "n_banks": 24,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 926,
-    "derived_ir": 2
+    "xbrl": 928,
+    "derived_ir": 6
    }
   },
   {
@@ -3161,12 +3162,12 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 204,
+   "n_cells": 207,
    "n_banks": 7,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 204
+    "xbrl": 207
    }
   },
   {
@@ -3182,13 +3183,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 147,
+   "n_cells": 149,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 119,
-    "derived_ir": 28
+    "xbrl": 122,
+    "derived_ir": 27
    }
   },
   {
@@ -3204,13 +3205,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 1172,
+   "n_cells": 1183,
    "n_banks": 26,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1153,
-    "derived_ir": 19
+    "xbrl": 1159,
+    "derived_ir": 24
    }
   },
   {
@@ -3226,13 +3227,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 793,
+   "n_cells": 800,
    "n_banks": 23,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 783,
-    "derived_ir": 10
+    "xbrl": 784,
+    "derived_ir": 16
    }
   },
   {
@@ -3248,12 +3249,12 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 348,
+   "n_cells": 347,
    "n_banks": 11,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 339,
+    "xbrl": 338,
     "derived_ir": 9
    }
   },
@@ -3270,12 +3271,12 @@
     "denominator": "cq_rated_total",
     "annualised": false
    },
-   "n_cells": 207,
+   "n_cells": 206,
    "n_banks": 7,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 207
+    "xbrl": 206
    }
   },
   {
@@ -3287,13 +3288,13 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 1630,
+   "n_cells": 1658,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1629,
-    "unrecorded": 1
+    "xbrl": 1655,
+    "unrecorded": 3
    }
   },
   {
@@ -3309,13 +3310,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 203,
+   "n_cells": 202,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 147,
-    "derived_ir": 56
+    "xbrl": 148,
+    "derived_ir": 54
    }
   },
   {
@@ -3331,13 +3332,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 1156,
+   "n_cells": 1165,
    "n_banks": 27,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1143,
-    "derived_ir": 13
+    "xbrl": 1146,
+    "derived_ir": 19
    }
   },
   {
@@ -3353,12 +3354,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 82,
+   "n_cells": 83,
    "n_banks": 2,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 82
+    "xbrl": 82,
+    "derived_ir": 1
    }
   },
   {
@@ -3377,7 +3379,7 @@
    "n_cells": 465,
    "n_banks": 18,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 441,
     "derived_ir": 24
@@ -3399,7 +3401,7 @@
    "n_cells": 444,
    "n_banks": 17,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 427,
     "derived_ir": 17
@@ -3427,7 +3429,7 @@
    "n_cells": 151,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 151
    }
@@ -3451,12 +3453,12 @@
     "category": "ci",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 188,
+   "n_cells": 193,
    "n_banks": 7,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 188
+    "xbrl": 193
    }
   },
   {
@@ -3505,12 +3507,12 @@
     "category": "commercial_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 1071,
+   "n_cells": 1090,
    "n_banks": 25,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1071
+    "xbrl": 1090
    }
   },
   {
@@ -3532,12 +3534,12 @@
     "category": "construction",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 128,
+   "n_cells": 130,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 128
+    "xbrl": 130
    }
   },
   {
@@ -3559,12 +3561,12 @@
     "category": "consumer_other",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 281,
+   "n_cells": 288,
    "n_banks": 10,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 281
+    "xbrl": 288
    }
   },
   {
@@ -3586,12 +3588,12 @@
     "category": "consumer_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 867,
+   "n_cells": 882,
    "n_banks": 22,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 867
+    "xbrl": 882
    }
   },
   {
@@ -3613,12 +3615,12 @@
     "category": "cre_investor",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 150,
+   "n_cells": 153,
    "n_banks": 4,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 150
+    "xbrl": 153
    }
   },
   {
@@ -3640,12 +3642,12 @@
     "category": "cre_total",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 417,
+   "n_cells": 426,
    "n_banks": 13,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 417
+    "xbrl": 426
    }
   },
   {
@@ -3667,12 +3669,12 @@
     "category": "credit_card",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 500,
+   "n_cells": 507,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 500
+    "xbrl": 507
    }
   },
   {
@@ -3721,12 +3723,12 @@
     "category": "home_equity",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 195,
+   "n_cells": 199,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 195
+    "xbrl": 199
    }
   },
   {
@@ -3748,12 +3750,12 @@
     "category": "lease",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 126,
+   "n_cells": 128,
    "n_banks": 4,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 126
+    "xbrl": 128
    }
   },
   {
@@ -3765,12 +3767,12 @@
    "kind": "flow",
    "unit": "USD",
    "definition": {},
-   "n_cells": 6,
+   "n_cells": 7,
    "n_banks": 1,
    "first_q": "2024Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "ir_supplement": 6
+    "ir_supplement": 7
    }
   },
   {
@@ -3792,12 +3794,12 @@
     "category": "other",
     "rolls_up_into": "total"
    },
-   "n_cells": 181,
+   "n_cells": 183,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 181
+    "xbrl": 183
    }
   },
   {
@@ -3819,12 +3821,12 @@
     "category": "resi_mortgage",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 533,
+   "n_cells": 542,
    "n_banks": 15,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 533
+    "xbrl": 542
    }
   },
   {
@@ -3846,12 +3848,12 @@
     "category": "securities_based",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 31,
+   "n_cells": 33,
    "n_banks": 2,
    "first_q": "2020Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 31
+    "xbrl": 33
    }
   },
   {
@@ -3873,12 +3875,12 @@
     "category": "student",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 62,
+   "n_cells": 63,
    "n_banks": 3,
    "first_q": "2014Q1",
-   "last_q": "2026Q1",
+   "last_q": "2026Q2",
    "sources": {
-    "xbrl": 62
+    "xbrl": 63
    }
   },
   {
@@ -3900,13 +3902,13 @@
     "category": "total",
     "rolls_up_into": null
    },
-   "n_cells": 1341,
+   "n_cells": 1366,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1318,
-    "ir_supplement": 23
+    "xbrl": 1342,
+    "ir_supplement": 24
    }
   },
   {
@@ -3922,13 +3924,13 @@
     "denominator": "loans_total",
     "annualised": true
    },
-   "n_cells": 1332,
+   "n_cells": 1357,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1308,
-    "derived_ir": 24
+    "xbrl": 1330,
+    "derived_ir": 27
    }
   },
   {
@@ -3944,13 +3946,13 @@
     "denominator": "loans_credit_card",
     "annualised": true
    },
-   "n_cells": 472,
+   "n_cells": 477,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 471,
-    "derived_ir": 1
+    "derived_ir": 6
    }
   },
   {
@@ -3966,13 +3968,13 @@
     "denominator": "loans_ci",
     "annualised": true
    },
-   "n_cells": 181,
+   "n_cells": 185,
    "n_banks": 7,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 180,
-    "derived_ir": 1
+    "derived_ir": 5
    }
   },
   {
@@ -3988,13 +3990,13 @@
     "denominator": "loans_cre_total",
     "annualised": true
    },
-   "n_cells": 390,
+   "n_cells": 395,
    "n_banks": 13,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 389,
-    "derived_ir": 1
+    "xbrl": 390,
+    "derived_ir": 5
    }
   },
   {
@@ -4017,12 +4019,12 @@
     "category": "auto",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 501,
+   "n_cells": 503,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 501
+    "xbrl": 503
    }
   },
   {
@@ -4045,12 +4047,12 @@
     "category": "ci",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 563,
+   "n_cells": 567,
    "n_banks": 17,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 563
+    "xbrl": 567
    }
   },
   {
@@ -4101,12 +4103,12 @@
     "category": "commercial_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 1009,
+   "n_cells": 1017,
    "n_banks": 25,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1009
+    "xbrl": 1017
    }
   },
   {
@@ -4129,12 +4131,12 @@
     "category": "construction",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 327,
+   "n_cells": 330,
    "n_banks": 10,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 327
+    "xbrl": 330
    }
   },
   {
@@ -4157,12 +4159,12 @@
     "category": "consumer_other",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 630,
+   "n_cells": 637,
    "n_banks": 19,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 630
+    "xbrl": 637
    }
   },
   {
@@ -4185,12 +4187,12 @@
     "category": "consumer_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 805,
+   "n_cells": 813,
    "n_banks": 18,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 805
+    "xbrl": 813
    }
   },
   {
@@ -4213,12 +4215,12 @@
     "category": "cre_investor",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 65,
+   "n_cells": 66,
    "n_banks": 4,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 65
+    "xbrl": 66
    }
   },
   {
@@ -4241,12 +4243,12 @@
     "category": "cre_owner_occupied",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 193,
+   "n_cells": 196,
    "n_banks": 5,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 193
+    "xbrl": 196
    }
   },
   {
@@ -4269,12 +4271,12 @@
     "category": "cre_total",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 731,
+   "n_cells": 735,
    "n_banks": 21,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 731
+    "xbrl": 735
    }
   },
   {
@@ -4300,7 +4302,7 @@
    "n_cells": 518,
    "n_banks": 13,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 518
    }
@@ -4328,7 +4330,7 @@
    "n_cells": 54,
    "n_banks": 1,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 54
    }
@@ -4353,12 +4355,12 @@
     "category": "fund_finance",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 7,
+   "n_cells": 9,
    "n_banks": 2,
    "first_q": "2024Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 7
+    "xbrl": 9
    }
   },
   {
@@ -4381,12 +4383,12 @@
     "category": "home_equity",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 673,
+   "n_cells": 676,
    "n_banks": 18,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 673
+    "xbrl": 676
    }
   },
   {
@@ -4409,12 +4411,12 @@
     "category": "lease",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 386,
+   "n_cells": 382,
    "n_banks": 13,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 386
+    "xbrl": 382
    }
   },
   {
@@ -4437,12 +4439,12 @@
     "category": "multifamily",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 115,
+   "n_cells": 117,
    "n_banks": 3,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 115
+    "xbrl": 117
    }
   },
   {
@@ -4465,12 +4467,12 @@
     "category": "municipal",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 78,
+   "n_cells": 79,
    "n_banks": 2,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 78
+    "xbrl": 79
    }
   },
   {
@@ -4482,12 +4484,12 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 8,
+   "n_cells": 9,
    "n_banks": 1,
    "first_q": "2024Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "ir_supplement": 8
+    "ir_supplement": 9
    }
   },
   {
@@ -4510,12 +4512,12 @@
     "category": "other",
     "rolls_up_into": "total"
    },
-   "n_cells": 347,
-   "n_banks": 11,
+   "n_cells": 348,
+   "n_banks": 10,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 347
+    "xbrl": 348
    }
   },
   {
@@ -4531,13 +4533,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 1306,
+   "n_cells": 1328,
    "n_banks": 30,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1297,
-    "derived_ir": 9
+    "xbrl": 1317,
+    "derived_ir": 11
    }
   },
   {
@@ -4560,12 +4562,12 @@
     "category": "resi_mortgage",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 956,
+   "n_cells": 959,
    "n_banks": 24,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 956
+    "xbrl": 959
    }
   },
   {
@@ -4588,12 +4590,12 @@
     "category": "securities_based",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 55,
+   "n_cells": 54,
    "n_banks": 3,
    "first_q": "2014Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 55
+    "xbrl": 54
    }
   },
   {
@@ -4619,7 +4621,7 @@
    "n_cells": 82,
    "n_banks": 2,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 82
    }
@@ -4644,12 +4646,12 @@
     "category": "student",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 106,
+   "n_cells": 104,
    "n_banks": 5,
    "first_q": "2013Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 106
+    "xbrl": 104
    }
   },
   {
@@ -4672,13 +4674,13 @@
     "category": "total",
     "rolls_up_into": null
    },
-   "n_cells": 1308,
+   "n_cells": 1330,
    "n_banks": 30,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1300,
-    "ir_supplement": 4,
+    "xbrl": 1320,
+    "ir_supplement": 6,
     "html": 4
    }
   },
@@ -4695,13 +4697,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 1311,
+   "n_cells": 1333,
    "n_banks": 30,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1297,
-    "derived_ir": 14
+    "xbrl": 1317,
+    "derived_ir": 16
    }
   },
   {
@@ -4713,14 +4715,14 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 1313,
+   "n_cells": 1335,
    "n_banks": 30,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1300,
+    "xbrl": 1320,
     "html": 9,
-    "ir_supplement": 4
+    "ir_supplement": 6
    }
   },
   {
@@ -4736,12 +4738,12 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 41,
+   "n_cells": 43,
    "n_banks": 5,
    "first_q": "2013Q4",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "derived_ir": 41
+    "derived_ir": 43
    }
   },
   {
@@ -4753,12 +4755,12 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 6,
+   "n_cells": 7,
    "n_banks": 1,
    "first_q": "2023Q4",
-   "last_q": "2025Q4",
+   "last_q": "2026Q3",
    "sources": {
-    "ir_supplement": 6
+    "ir_supplement": 7
    }
   },
   {
@@ -4774,13 +4776,13 @@
     "denominator": "loans_office_cre",
     "annualised": false
    },
-   "n_cells": 20,
+   "n_cells": 22,
    "n_banks": 2,
    "first_q": "2023Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "ir_supplement": 12,
-    "derived_ir": 8
+    "ir_supplement": 13,
+    "derived_ir": 9
    }
   },
   {
@@ -4796,12 +4798,12 @@
     "denominator": "loans_office_cre",
     "annualised": false
    },
-   "n_cells": 7,
+   "n_cells": 8,
    "n_banks": 1,
    "first_q": "2024Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "derived_ir": 7
+    "derived_ir": 8
    }
   },
   {
@@ -4817,12 +4819,12 @@
      "Assets"
     ]
    },
-   "n_cells": 1641,
+   "n_cells": 1669,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1641
+    "xbrl": 1669
    }
   },
   {
@@ -4838,12 +4840,12 @@
      "StockholdersEquity"
     ]
    },
-   "n_cells": 1568,
+   "n_cells": 1596,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1568
+    "xbrl": 1596
    }
   },
   {
@@ -4859,12 +4861,12 @@
      "NetIncomeLoss"
     ]
    },
-   "n_cells": 1526,
+   "n_cells": 1554,
    "n_banks": 30,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1526
+    "xbrl": 1554
    }
   },
   {
@@ -4880,12 +4882,12 @@
      "InterestIncomeExpenseNet"
     ]
    },
-   "n_cells": 1538,
+   "n_cells": 1564,
    "n_banks": 29,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1538
+    "xbrl": 1564
    }
   },
   {
@@ -4904,14 +4906,14 @@
      "OtherRealEstate"
     ]
    },
-   "n_cells": 524,
+   "n_cells": 530,
    "n_banks": 23,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 431,
+    "xbrl": 436,
     "html": 76,
-    "ir_supplement": 17
+    "ir_supplement": 18
    }
   },
   {
@@ -4927,12 +4929,12 @@
      "Revenues"
     ]
    },
-   "n_cells": 827,
+   "n_cells": 843,
    "n_banks": 22,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 827
+    "xbrl": 843
    }
   },
   {
@@ -4949,12 +4951,12 @@
      "CommitmentsToExtendCredit"
     ]
    },
-   "n_cells": 446,
+   "n_cells": 461,
    "n_banks": 19,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 446
+    "xbrl": 461
    }
   },
   {
@@ -4969,12 +4971,12 @@
     "axis": "past_due",
     "category": "current"
    },
-   "n_cells": 943,
+   "n_cells": 949,
    "n_banks": 24,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 943
+    "xbrl": 949
    }
   },
   {
@@ -5032,7 +5034,7 @@
    "n_cells": 53,
    "n_banks": 2,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 53
    }
@@ -5049,12 +5051,12 @@
     "axis": "past_due",
     "category": "past_due_total"
    },
-   "n_cells": 963,
+   "n_cells": 967,
    "n_banks": 26,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 963
+    "xbrl": 967
    }
   },
   {
@@ -5069,12 +5071,12 @@
     "axis": "past_due",
     "category": "dpd_30_59"
    },
-   "n_cells": 628,
+   "n_cells": 631,
    "n_banks": 17,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 628
+    "xbrl": 631
    }
   },
   {
@@ -5092,7 +5094,7 @@
    "n_cells": 650,
    "n_banks": 22,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 612,
     "html": 38
@@ -5110,12 +5112,12 @@
     "axis": "past_due",
     "category": "dpd_60_89"
    },
-   "n_cells": 625,
+   "n_cells": 627,
    "n_banks": 16,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 625
+    "xbrl": 627
    }
   },
   {
@@ -5130,12 +5132,12 @@
     "axis": "past_due",
     "category": "dpd_90_plus"
    },
-   "n_cells": 1367,
+   "n_cells": 1380,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1363,
+    "xbrl": 1376,
     "html": 4
    }
   },
@@ -5158,12 +5160,12 @@
     "category": "auto",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 87,
+   "n_cells": 85,
    "n_banks": 4,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 87
+    "xbrl": 85
    }
   },
   {
@@ -5185,12 +5187,12 @@
     "category": "ci",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 129,
+   "n_cells": 131,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 129
+    "xbrl": 131
    }
   },
   {
@@ -5239,12 +5241,12 @@
     "category": "commercial_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 797,
+   "n_cells": 799,
    "n_banks": 24,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 797
+    "xbrl": 799
    }
   },
   {
@@ -5266,12 +5268,12 @@
     "category": "construction",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 111,
+   "n_cells": 110,
    "n_banks": 4,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 111
+    "xbrl": 110
    }
   },
   {
@@ -5293,12 +5295,12 @@
     "category": "consumer_other",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 190,
+   "n_cells": 193,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 190
+    "xbrl": 193
    }
   },
   {
@@ -5320,12 +5322,12 @@
     "category": "consumer_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 647,
+   "n_cells": 648,
    "n_banks": 21,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 647
+    "xbrl": 648
    }
   },
   {
@@ -5347,12 +5349,12 @@
     "category": "cre_investor",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 117,
+   "n_cells": 118,
    "n_banks": 3,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 117
+    "xbrl": 118
    }
   },
   {
@@ -5374,12 +5376,12 @@
     "category": "cre_total",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 339,
+   "n_cells": 342,
    "n_banks": 12,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 339
+    "xbrl": 342
    }
   },
   {
@@ -5401,12 +5403,12 @@
     "category": "credit_card",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 411,
+   "n_cells": 414,
    "n_banks": 11,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 411
+    "xbrl": 414
    }
   },
   {
@@ -5455,12 +5457,12 @@
     "category": "home_equity",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 160,
+   "n_cells": 162,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 160
+    "xbrl": 162
    }
   },
   {
@@ -5482,12 +5484,12 @@
     "category": "lease",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 94,
+   "n_cells": 95,
    "n_banks": 3,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 94
+    "xbrl": 95
    }
   },
   {
@@ -5512,7 +5514,7 @@
    "n_cells": 154,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 154
    }
@@ -5536,12 +5538,12 @@
     "category": "resi_mortgage",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 445,
+   "n_cells": 446,
    "n_banks": 14,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 445
+    "xbrl": 446
    }
   },
   {
@@ -5611,13 +5613,13 @@
     "denominator": "nco_total",
     "annualised": false
    },
-   "n_cells": 1113,
+   "n_cells": 1128,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1073,
-    "derived_ir": 40
+    "xbrl": 1085,
+    "derived_ir": 43
    }
   },
   {
@@ -5639,13 +5641,13 @@
     "category": "total",
     "rolls_up_into": null
    },
-   "n_cells": 1409,
+   "n_cells": 1425,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1376,
-    "ir_supplement": 33
+    "xbrl": 1390,
+    "ir_supplement": 35
    }
   },
   {
@@ -5671,7 +5673,7 @@
    "n_cells": 124,
    "n_banks": 5,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
     "xbrl": 124
    }
@@ -5696,12 +5698,12 @@
     "category": "ci",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 165,
+   "n_cells": 169,
    "n_banks": 6,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 165
+    "xbrl": 169
    }
   },
   {
@@ -5752,12 +5754,12 @@
     "category": "commercial_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 1015,
+   "n_cells": 1034,
    "n_banks": 24,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1015
+    "xbrl": 1034
    }
   },
   {
@@ -5780,12 +5782,12 @@
     "category": "construction",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 112,
+   "n_cells": 111,
    "n_banks": 5,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 112
+    "xbrl": 111
    }
   },
   {
@@ -5808,12 +5810,12 @@
     "category": "consumer_other",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 262,
+   "n_cells": 269,
    "n_banks": 10,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 262
+    "xbrl": 269
    }
   },
   {
@@ -5836,12 +5838,12 @@
     "category": "consumer_total",
     "rolls_up_into": "total"
    },
-   "n_cells": 838,
+   "n_cells": 853,
    "n_banks": 22,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 838
+    "xbrl": 853
    }
   },
   {
@@ -5864,12 +5866,12 @@
     "category": "cre_investor",
     "rolls_up_into": "cre_total"
    },
-   "n_cells": 127,
+   "n_cells": 129,
    "n_banks": 3,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 127
+    "xbrl": 129
    }
   },
   {
@@ -5892,12 +5894,12 @@
     "category": "cre_total",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 409,
+   "n_cells": 418,
    "n_banks": 13,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 409
+    "xbrl": 418
    }
   },
   {
@@ -5920,12 +5922,12 @@
     "category": "credit_card",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 448,
+   "n_cells": 454,
    "n_banks": 11,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 448
+    "xbrl": 454
    }
   },
   {
@@ -5976,12 +5978,12 @@
     "category": "home_equity",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 175,
+   "n_cells": 178,
    "n_banks": 7,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 175
+    "xbrl": 178
    }
   },
   {
@@ -6004,12 +6006,12 @@
     "category": "lease",
     "rolls_up_into": "commercial_total"
    },
-   "n_cells": 105,
+   "n_cells": 106,
    "n_banks": 3,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 105
+    "xbrl": 106
    }
   },
   {
@@ -6032,12 +6034,12 @@
     "category": "other",
     "rolls_up_into": "total"
    },
-   "n_cells": 181,
+   "n_cells": 183,
    "n_banks": 8,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 181
+    "xbrl": 183
    }
   },
   {
@@ -6060,12 +6062,12 @@
     "category": "resi_mortgage",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 506,
+   "n_cells": 515,
    "n_banks": 15,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 506
+    "xbrl": 515
    }
   },
   {
@@ -6088,12 +6090,12 @@
     "category": "securities_based",
     "rolls_up_into": "consumer_total"
    },
-   "n_cells": 31,
+   "n_cells": 33,
    "n_banks": 2,
    "first_q": "2020Q3",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 31
+    "xbrl": 33
    }
   },
   {
@@ -6144,12 +6146,12 @@
     "category": "total",
     "rolls_up_into": null
    },
-   "n_cells": 1292,
+   "n_cells": 1316,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1292
+    "xbrl": 1316
    }
   },
   {
@@ -6165,13 +6167,13 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 1616,
+   "n_cells": 1644,
    "n_banks": 31,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1600,
-    "derived_ir": 16
+    "xbrl": 1627,
+    "derived_ir": 17
    }
   },
   {
@@ -6187,13 +6189,13 @@
     "denominator": "loans_cre_total",
     "annualised": false
    },
-   "n_cells": 514,
+   "n_cells": 518,
    "n_banks": 16,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 513,
-    "derived_ir": 1
+    "xbrl": 515,
+    "derived_ir": 3
    }
   },
   {
@@ -6209,13 +6211,13 @@
     "denominator": "nonaccrual_total",
     "annualised": false
    },
-   "n_cells": 1306,
+   "n_cells": 1328,
    "n_banks": 30,
    "first_q": "2013Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {
-    "xbrl": 1283,
-    "derived_ir": 23
+    "xbrl": 1304,
+    "derived_ir": 24
    }
   },
   {
@@ -6659,10 +6661,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6687,10 +6689,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6715,10 +6717,10 @@
     "since": "2015Q1",
     "alternatives": []
    },
-   "n_cells": 1508,
+   "n_cells": 1535,
    "n_banks": 38,
    "first_q": "2015Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6730,10 +6732,10 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 1508,
+   "n_cells": 1535,
    "n_banks": 38,
    "first_q": "2015Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6757,10 +6759,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6789,10 +6791,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6821,10 +6823,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6853,10 +6855,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6880,10 +6882,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6912,10 +6914,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6939,10 +6941,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6966,10 +6968,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -6993,10 +6995,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7025,10 +7027,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7052,10 +7054,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7084,10 +7086,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7111,10 +7113,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3759,
+   "n_cells": 3794,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7144,10 +7146,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7172,10 +7174,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7200,10 +7202,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7228,10 +7230,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7262,10 +7264,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7290,10 +7292,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3661,
+   "n_cells": 3696,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7309,10 +7311,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3625,
+   "n_cells": 3660,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7324,10 +7326,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7351,10 +7353,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7379,10 +7381,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7407,10 +7409,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7424,10 +7426,10 @@
    "definition": {
     "derived_from": "deposits"
    },
-   "n_cells": 3707,
+   "n_cells": 3742,
    "n_banks": 38,
    "first_q": "2001Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7451,10 +7453,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3636,
+   "n_cells": 3671,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7466,10 +7468,10 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 3745,
+   "n_cells": 3780,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7483,10 +7485,10 @@
    "definition": {
     "derived_from": "deposits"
    },
-   "n_cells": 3593,
+   "n_cells": 3628,
    "n_banks": 38,
    "first_q": "2002Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7511,10 +7513,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3636,
+   "n_cells": 3671,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7539,10 +7541,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7572,10 +7574,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7605,10 +7607,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7638,10 +7640,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7666,10 +7668,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7694,10 +7696,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7727,10 +7729,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7755,10 +7757,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7783,10 +7785,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7816,10 +7818,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7844,10 +7846,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7872,10 +7874,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3428,
+   "n_cells": 3459,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7899,10 +7901,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 2765,
+   "n_cells": 2815,
    "n_banks": 34,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7927,10 +7929,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7964,10 +7966,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -7992,10 +7994,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8020,10 +8022,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8039,10 +8041,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8058,10 +8060,10 @@
     "denominator": "loans_construction",
     "annualised": false
    },
-   "n_cells": 3108,
+   "n_cells": 3138,
    "n_banks": 36,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8077,10 +8079,10 @@
     "denominator": "loans_resi_mortgage",
     "annualised": false
    },
-   "n_cells": 3271,
+   "n_cells": 3302,
    "n_banks": 37,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8105,10 +8107,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3597,
+   "n_cells": 3632,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8138,10 +8140,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8166,10 +8168,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3636,
+   "n_cells": 3671,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8194,10 +8196,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8227,10 +8229,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8260,10 +8262,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8293,10 +8295,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8321,10 +8323,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8349,10 +8351,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8382,10 +8384,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8410,10 +8412,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8438,10 +8440,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8471,10 +8473,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8499,10 +8501,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8527,10 +8529,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3428,
+   "n_cells": 3459,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8554,10 +8556,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 2765,
+   "n_cells": 2815,
    "n_banks": 34,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8582,10 +8584,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8619,10 +8621,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8647,10 +8649,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8675,10 +8677,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8694,10 +8696,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8722,10 +8724,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3597,
+   "n_cells": 3632,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8755,10 +8757,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8770,10 +8772,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8804,10 +8806,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8831,10 +8833,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8858,10 +8860,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8886,10 +8888,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8914,10 +8916,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8941,10 +8943,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8974,10 +8976,10 @@
      ]
     ]
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -8991,10 +8993,10 @@
    "definition": {
     "derived_from": "loans_ci"
    },
-   "n_cells": 3581,
+   "n_cells": 3615,
    "n_banks": 38,
    "first_q": "2001Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9008,10 +9010,10 @@
    "definition": {
     "derived_from": "loans_ci"
    },
-   "n_cells": 3470,
+   "n_cells": 3504,
    "n_banks": 38,
    "first_q": "2002Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9032,10 +9034,10 @@
      "loans_lease"
     ]
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9065,10 +9067,10 @@
      ]
     ]
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9082,10 +9084,10 @@
    "definition": {
     "derived_from": "loans_construction"
    },
-   "n_cells": 3117,
+   "n_cells": 3147,
    "n_banks": 36,
    "first_q": "2001Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9099,10 +9101,10 @@
    "definition": {
     "derived_from": "loans_construction"
    },
-   "n_cells": 3021,
+   "n_cells": 3051,
    "n_banks": 36,
    "first_q": "2002Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9132,10 +9134,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9152,10 +9154,10 @@
      "loans_consumer_installment"
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9181,10 +9183,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9209,10 +9211,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9232,10 +9234,10 @@
      "loans_consumer_installment"
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9260,10 +9262,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9293,10 +9295,10 @@
      ]
     ]
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9321,10 +9323,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9342,10 +9344,10 @@
      "loans_multifamily"
     ]
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9359,10 +9361,10 @@
    "definition": {
     "derived_from": "loans_cre_total"
    },
-   "n_cells": 3320,
+   "n_cells": 3352,
    "n_banks": 36,
    "first_q": "2001Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9376,10 +9378,10 @@
    "definition": {
     "derived_from": "loans_cre_total"
    },
-   "n_cells": 3218,
+   "n_cells": 3250,
    "n_banks": 36,
    "first_q": "2002Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9404,10 +9406,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9440,10 +9442,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9468,10 +9470,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9488,10 +9490,10 @@
      "loans_nondepository_fi"
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9516,10 +9518,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9544,10 +9546,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9577,10 +9579,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9605,10 +9607,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9622,10 +9624,10 @@
    "definition": {
     "derived_from": "loans_multifamily"
    },
-   "n_cells": 3145,
+   "n_cells": 3176,
    "n_banks": 35,
    "first_q": "2001Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9639,10 +9641,10 @@
    "definition": {
     "derived_from": "loans_multifamily"
    },
-   "n_cells": 3046,
+   "n_cells": 3077,
    "n_banks": 35,
    "first_q": "2002Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9667,10 +9669,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9695,10 +9697,10 @@
     "since": "2010Q1",
     "alternatives": []
    },
-   "n_cells": 2446,
+   "n_cells": 2481,
    "n_banks": 38,
    "first_q": "2010Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9730,10 +9732,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9770,10 +9772,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9798,10 +9800,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9827,10 +9829,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9855,10 +9857,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3597,
+   "n_cells": 3632,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9884,10 +9886,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 2737,
+   "n_cells": 2772,
    "n_banks": 38,
    "first_q": "2001Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9913,10 +9915,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 2737,
+   "n_cells": 2772,
    "n_banks": 38,
    "first_q": "2001Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9956,10 +9958,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9975,10 +9977,10 @@
     "denominator": "assets",
     "annualised": false
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -9994,10 +9996,10 @@
     "denominator": "deposits",
     "annualised": false
    },
-   "n_cells": 3745,
+   "n_cells": 3780,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10022,10 +10024,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10039,10 +10041,10 @@
    "definition": {
     "derived_from": "loans_total"
    },
-   "n_cells": 3674,
+   "n_cells": 3709,
    "n_banks": 38,
    "first_q": "2001Q2",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10056,10 +10058,10 @@
    "definition": {
     "derived_from": "loans_total"
    },
-   "n_cells": 3560,
+   "n_cells": 3595,
    "n_banks": 38,
    "first_q": "2002Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10071,10 +10073,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 2967,
+   "n_cells": 3002,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10099,10 +10101,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10118,10 +10120,10 @@
     "denominator": "deposits",
     "annualised": false
    },
-   "n_cells": 3658,
+   "n_cells": 3693,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10137,10 +10139,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10156,10 +10158,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10175,10 +10177,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10194,10 +10196,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3625,
+   "n_cells": 3660,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10213,10 +10215,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 2826,
+   "n_cells": 2861,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10232,10 +10234,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 2826,
+   "n_cells": 2861,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10251,10 +10253,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10270,10 +10272,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3625,
+   "n_cells": 3660,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10285,10 +10287,10 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 3625,
+   "n_cells": 3660,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10304,10 +10306,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10319,10 +10321,10 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 2916,
+   "n_cells": 2951,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10338,10 +10340,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3625,
+   "n_cells": 3660,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10357,10 +10359,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3625,
+   "n_cells": 3660,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10376,10 +10378,10 @@
     "denominator": "assets",
     "annualised": false
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10396,10 +10398,10 @@
      "recoveries_auto"
     ]
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10416,10 +10418,10 @@
      "recoveries_ci"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10436,10 +10438,10 @@
      "recoveries_construction"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10456,10 +10458,10 @@
      "recoveries_consumer_noncard"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10476,10 +10478,10 @@
      "recoveries_cre_investor"
     ]
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10496,10 +10498,10 @@
      "recoveries_cre_nonfarm_nonres"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10516,10 +10518,10 @@
      "recoveries_cre_owner_occupied"
     ]
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10537,10 +10539,10 @@
      "nco_multifamily"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10557,10 +10559,10 @@
      "recoveries_credit_card"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10577,10 +10579,10 @@
      "recoveries_home_equity"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10597,10 +10599,10 @@
      "recoveries_lease"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10617,10 +10619,10 @@
      "recoveries_multifamily"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10637,10 +10639,10 @@
      "recoveries_resi_mortgage"
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10657,10 +10659,10 @@
      "recoveries_total"
     ]
    },
-   "n_cells": 3759,
+   "n_cells": 3794,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10676,10 +10678,10 @@
     "denominator": "loans_total",
     "annualised": true
    },
-   "n_cells": 3710,
+   "n_cells": 3745,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10695,10 +10697,10 @@
     "denominator": "loans_credit_card",
     "annualised": true
    },
-   "n_cells": 2812,
+   "n_cells": 2839,
    "n_banks": 36,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10714,10 +10716,10 @@
     "denominator": "loans_ci",
     "annualised": true
    },
-   "n_cells": 3554,
+   "n_cells": 3588,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10733,10 +10735,10 @@
     "denominator": "loans_construction",
     "annualised": true
    },
-   "n_cells": 3108,
+   "n_cells": 3138,
    "n_banks": 36,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10752,10 +10754,10 @@
     "denominator": "loans_consumer_noncard",
     "annualised": true
    },
-   "n_cells": 3537,
+   "n_cells": 3570,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10771,10 +10773,10 @@
     "denominator": "loans_cre_total",
     "annualised": true
    },
-   "n_cells": 3313,
+   "n_cells": 3345,
    "n_banks": 36,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10790,10 +10792,10 @@
     "denominator": "loans_cre_nonfarm_nonres",
     "annualised": true
    },
-   "n_cells": 3244,
+   "n_cells": 3274,
    "n_banks": 35,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10809,10 +10811,10 @@
     "denominator": "loans_home_equity",
     "annualised": true
    },
-   "n_cells": 3040,
+   "n_cells": 3078,
    "n_banks": 36,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10828,10 +10830,10 @@
     "denominator": "loans_multifamily",
     "annualised": true
    },
-   "n_cells": 3154,
+   "n_cells": 3185,
    "n_banks": 35,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10847,10 +10849,10 @@
     "denominator": "loans_resi_mortgage",
     "annualised": true
    },
-   "n_cells": 3271,
+   "n_cells": 3302,
    "n_banks": 37,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10875,10 +10877,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3636,
+   "n_cells": 3671,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10903,10 +10905,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10936,10 +10938,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -10969,10 +10971,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11002,10 +11004,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11030,10 +11032,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11058,10 +11060,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11091,10 +11093,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11119,10 +11121,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11147,10 +11149,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11180,10 +11182,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11208,10 +11210,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11236,10 +11238,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3428,
+   "n_cells": 3459,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11263,10 +11265,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 2765,
+   "n_cells": 2815,
    "n_banks": 34,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11291,10 +11293,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11328,10 +11330,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11356,10 +11358,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11384,10 +11386,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11403,10 +11405,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11422,10 +11424,10 @@
     "denominator": "loans_construction",
     "annualised": false
    },
-   "n_cells": 3108,
+   "n_cells": 3138,
    "n_banks": 36,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11441,10 +11443,10 @@
     "denominator": "loans_cre_nonfarm_nonres",
     "annualised": false
    },
-   "n_cells": 3244,
+   "n_cells": 3274,
    "n_banks": 35,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11460,10 +11462,10 @@
     "denominator": "loans_resi_mortgage",
     "annualised": false
    },
-   "n_cells": 3271,
+   "n_cells": 3302,
    "n_banks": 37,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11488,10 +11490,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3597,
+   "n_cells": 3632,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11521,10 +11523,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11549,10 +11551,10 @@
     "since": "2017Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11576,10 +11578,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11603,10 +11605,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11622,10 +11624,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11637,10 +11639,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11665,10 +11667,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11693,10 +11695,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11721,10 +11723,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11749,10 +11751,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11768,10 +11770,10 @@
     "denominator": "assets",
     "annualised": false
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11801,10 +11803,10 @@
      ]
     ]
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11830,10 +11832,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11872,10 +11874,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11899,10 +11901,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11918,10 +11920,10 @@
     "denominator": "assets_average",
     "annualised": true
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11937,10 +11939,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11952,10 +11954,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11980,10 +11982,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -11995,10 +11997,10 @@
    "kind": "flow",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12014,10 +12016,10 @@
     "denominator": "assets_average",
     "annualised": true
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12042,10 +12044,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12057,10 +12059,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 2967,
+   "n_cells": 3002,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12072,10 +12074,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12091,10 +12093,10 @@
     "denominator": "assets_average",
     "annualised": true
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12119,10 +12121,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12138,10 +12140,10 @@
     "denominator": "tangible_assets",
     "annualised": false
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12153,10 +12155,10 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12181,10 +12183,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12196,10 +12198,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12224,10 +12226,10 @@
     "since": "2017Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12252,10 +12254,10 @@
     "since": "2017Q1",
     "alternatives": []
    },
-   "n_cells": 3763,
+   "n_cells": 3798,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12271,10 +12273,10 @@
     "denominator": "loans_total",
     "annualised": true
    },
-   "n_cells": 3624,
+   "n_cells": 3659,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12290,10 +12292,10 @@
     "denominator": "nco_total",
     "annualised": false
    },
-   "n_cells": 3447,
+   "n_cells": 3480,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12317,10 +12319,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12344,10 +12346,10 @@
     "since": "2011Q1",
     "alternatives": []
    },
-   "n_cells": 2306,
+   "n_cells": 2341,
    "n_banks": 38,
    "first_q": "2011Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12376,10 +12378,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12408,10 +12410,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12440,10 +12442,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12467,10 +12469,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12499,10 +12501,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12526,10 +12528,10 @@
     "since": "2007Q1",
     "alternatives": []
    },
-   "n_cells": 2853,
+   "n_cells": 2888,
    "n_banks": 38,
    "first_q": "2007Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12553,10 +12555,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12580,10 +12582,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12612,10 +12614,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12639,10 +12641,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12671,10 +12673,10 @@
      ]
     ]
    },
-   "n_cells": 3673,
+   "n_cells": 3708,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12698,10 +12700,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3759,
+   "n_cells": 3794,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12717,10 +12719,10 @@
     "denominator": "loans_total",
     "annualised": false
    },
-   "n_cells": 3712,
+   "n_cells": 3747,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12736,10 +12738,10 @@
     "denominator": "nonaccrual_total",
     "annualised": false
    },
-   "n_cells": 3488,
+   "n_cells": 3523,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12755,10 +12757,10 @@
     "denominator": "noncurrent_total",
     "annualised": false
    },
-   "n_cells": 3626,
+   "n_cells": 3661,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12783,10 +12785,10 @@
     "since": "2015Q1",
     "alternatives": []
    },
-   "n_cells": 1710,
+   "n_cells": 1745,
    "n_banks": 38,
    "first_q": "2015Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12843,10 +12845,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12871,10 +12873,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12886,10 +12888,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12916,10 +12918,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12944,10 +12946,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12972,10 +12974,10 @@
     "since": "2001Q1",
     "alternatives": []
    },
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -12987,10 +12989,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -13002,10 +13004,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -13017,10 +13019,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -13032,10 +13034,10 @@
    "kind": "stock",
    "unit": "USD",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -13060,10 +13062,10 @@
     "since": "2015Q1",
     "alternatives": []
    },
-   "n_cells": 1710,
+   "n_cells": 1745,
    "n_banks": 38,
    "first_q": "2015Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -13107,10 +13109,10 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 3676,
+   "n_cells": 3711,
    "n_banks": 38,
    "first_q": "2001Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -13122,10 +13124,10 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 1710,
+   "n_cells": 1745,
    "n_banks": 38,
    "first_q": "2015Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -13165,10 +13167,10 @@
     "since": "2015Q1",
     "alternatives": []
    },
-   "n_cells": 1710,
+   "n_cells": 1745,
    "n_banks": 38,
    "first_q": "2015Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {
@@ -13212,10 +13214,10 @@
    "kind": "ratio",
    "unit": "%",
    "definition": {},
-   "n_cells": 1710,
+   "n_cells": 1745,
    "n_banks": 38,
    "first_q": "2015Q1",
-   "last_q": "2026Q2",
+   "last_q": "2026Q3",
    "sources": {}
   },
   {

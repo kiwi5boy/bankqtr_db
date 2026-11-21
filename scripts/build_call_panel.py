@@ -34,7 +34,7 @@ import sys
 
 import polars as pl
 
-from callrpt_db import cdr, config, crosscheck, lineage, mdrm, panel, schedules
+from callrpt_db import cdr, config, crosscheck, lineage, mdrm, panel
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("build_call")
@@ -493,13 +493,7 @@ def main(argv: list[str] | None = None) -> int:
         log.error("no cached periods inside %s..%s", args.since, until)
         return 1
 
-    tiers = {"dfast", "ihc", "inactive"}
-    if args.comparators:
-        tiers.add("comparator")
-    holdings = tuple(h for h in config.HOLDINGS if h.tier in tiers)
-    if args.tickers:
-        wanted = {t.upper() for t in args.tickers}
-        holdings = tuple(h for h in holdings if h.ticker.upper() in wanted)
+    holdings = panel.select_holdings(comparators=args.comparators, tickers=args.tickers)
     if not holdings:
         log.error("no holdings selected")
         return 1
@@ -518,22 +512,10 @@ def main(argv: list[str] | None = None) -> int:
         len(holdings),
     )
 
-    # Every filer in the window, and the latest name the roster gives each:
-    # the lineage uses the first to recognise a depository NIC's attribute
-    # files omit, and the second to name it.
-    filers: set[int] = set()
-    names: dict[int, str] = {}
-    for period in periods:
-        roster = schedules.roster(cdr.zip_path(period))
-        filers.update(roster["rssd"].to_list())
-        names.update(zip(roster["rssd"].to_list(), roster["name"].to_list()))
-
+    filers, names = panel.window_filers(periods)
     lineages: dict[str, lineage.Lineage] | None = None
     if not args.no_lineage:
-        quarter_ends = [cdr.quarter_end(p) for p in periods]
-        lineages = lineage.resolve_all(
-            holdings, quarter_ends, floor=cdr.quarter_end(periods[0]).replace(month=1, day=1), filers=filers
-        )
+        lineages = panel.window_lineages(periods, holdings, filers)
 
     # The thrift backfill needs to know which depositories are missing, and
     # that is a property of a built panel.  So the first pass is built without
