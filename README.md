@@ -25,8 +25,8 @@ onto one schema. Those rows carry `source = "tfr"` on coarser loan categories,
 so a reconstructed quarter is always distinguishable from a filed one. Without
 that flag the pre-2012 history is a floor, and `n_insured_not_filing` says where.
 
-📖 **[Full documentation is in the wiki.](https://github.com/keithcsqueensu/bankqtr_db/wiki)**
-📊 **[Panel downloads and charts.](https://keithcsqueensu.github.io/bankqtr_db/)**
+📖 **[Full documentation is in the wiki.](https://github.com/kiwi5boy/bankqtr_db/wiki)**
+📊 **[Panel downloads and charts.](https://kiwi5boy.github.io/bankqtr_db/)**
 📓 **[A worked example, start to finish.](examples/peer_nco_benchmark.ipynb)**
 
 ## Quick start
@@ -56,7 +56,7 @@ Fetching and building are separate on purpose: every `build_*` script reads only
 what is already cached and never touches the network, so a rebuild is
 reproducible. A full 2013-start EDGAR build takes a few minutes.
 
-See **[Quick Start](https://github.com/keithcsqueensu/bankqtr_db/wiki/Quick-Start)**
+See **[Quick Start](https://github.com/kiwi5boy/bankqtr_db/wiki/Quick-Start)**
 for the narrower windows and what each flag costs.
 
 ## Outputs
@@ -73,8 +73,8 @@ Both builds land in `data/out/`:
 | `source_diff.csv` | EDGAR against FFIEC, per bank-quarter per variable |
 | `rssd_lineage.csv` | every predecessor of every firm: who was absorbed into whom, when, how |
 
-Full list and column reference: **[Outputs](https://github.com/keithcsqueensu/bankqtr_db/wiki/Outputs)**
-and **[Data Dictionary](https://github.com/keithcsqueensu/bankqtr_db/wiki/Data-Dictionary)**.
+Full list and column reference: **[Outputs](https://github.com/kiwi5boy/bankqtr_db/wiki/Outputs)**
+and **[Data Dictionary](https://github.com/kiwi5boy/bankqtr_db/wiki/Data-Dictionary)**.
 
 ## A worked example
 
@@ -96,7 +96,7 @@ The home bank is a variable in the first cell.
 
 ## Looking a variable up
 
-**[The variable dictionary](https://keithcsqueensu.github.io/bankqtr_db/dictionary.html)**
+**[The variable dictionary](https://kiwi5boy.github.io/bankqtr_db/dictionary.html)**
 on the site lists every column in both panels — searchable by name, by meaning,
 by MDRM item or by XBRL element. Each entry says what the number is, how it is
 defined, and how many banks and quarters carry it:
@@ -184,8 +184,8 @@ a property of the underlying disclosure that the panel reports rather than hides
    FDIC BankFind; `n_insured_not_filing` counts what is still missing.
 
 The full account — the other two, and the rest of what the long FFIEC window
-adds: **[Reading the Panel](https://github.com/keithcsqueensu/bankqtr_db/wiki/Reading-the-Panel)**
-and **[Going Back to 2001](https://github.com/keithcsqueensu/bankqtr_db/wiki/Going-Back-to-2001)**.
+adds: **[Reading the Panel](https://github.com/kiwi5boy/bankqtr_db/wiki/Reading-the-Panel)**
+and **[Going Back to 2001](https://github.com/kiwi5boy/bankqtr_db/wiki/Going-Back-to-2001)**.
 
 ## The one thing to know first
 
@@ -211,29 +211,29 @@ uv run ruff check .
 <!--stats:tests-->410<!--/stats--> tests across both builds. Every one corresponds to a defect that produced
 **plausible but wrong** numbers during development — the dangerous kind, since
 nothing raises and the panel still renders. The catalogue of what they guard is
-in the wiki: **[Traps](https://github.com/keithcsqueensu/bankqtr_db/wiki/Traps)**.
+in the wiki: **[Traps](https://github.com/kiwi5boy/bankqtr_db/wiki/Traps)**.
 
 ## Documentation
 
 | Page | What it covers |
 |---|---|
-| [Quick Start](https://github.com/keithcsqueensu/bankqtr_db/wiki/Quick-Start) | Clean checkout to built panel, both sources |
-| [Choosing a Source](https://github.com/keithcsqueensu/bankqtr_db/wiki/Choosing-a-Source) | Which panel answers your question, and what to do when they disagree |
-| [Reading the Panel](https://github.com/keithcsqueensu/bankqtr_db/wiki/Reading-the-Panel) | The six caveats that matter before analysis |
-| [Outputs](https://github.com/keithcsqueensu/bankqtr_db/wiki/Outputs) | What each file in `data/out/` contains |
-| [Data Dictionary](https://github.com/keithcsqueensu/bankqtr_db/wiki/Data-Dictionary) | Column naming scheme, provenance, and the families |
-| [Universe](https://github.com/keithcsqueensu/bankqtr_db/wiki/Universe) | Who is in, who is deliberately out |
-| [Glossary](https://github.com/keithcsqueensu/bankqtr_db/wiki/Glossary) | RSSD, MDRM, RCFD/RCON, CECL, EX-13 |
-| [FAQ](https://github.com/keithcsqueensu/bankqtr_db/wiki/FAQ) | Short answers with links |
-| [EDGAR Panel](https://github.com/keithcsqueensu/bankqtr_db/wiki/EDGAR-Panel) | Two-tier extraction, and why the panel logic is not a groupby |
-| [IR Supplements](https://github.com/keithcsqueensu/bankqtr_db/wiki/IR-Supplements) | Office CRE and the disclosures XBRL has no tag for |
-| [HTML Fallback](https://github.com/keithcsqueensu/bankqtr_db/wiki/HTML-Fallback) | Parsing the filing's own tables |
-| [Extending to 2013](https://github.com/keithcsqueensu/bankqtr_db/wiki/Extending-to-2013) | Build record for the XBRL back-extension |
-| [Call Reports](https://github.com/keithcsqueensu/bankqtr_db/wiki/Call-Reports) | What the second source buys, and what it does not |
-| [Going Back to 2001](https://github.com/keithcsqueensu/bankqtr_db/wiki/Going-Back-to-2001) | Lineage, predecessors, and the thrift gap |
-| [Traps](https://github.com/keithcsqueensu/bankqtr_db/wiki/Traps) | Every catalogued failure, indexed by failure mode |
-| [Testing](https://github.com/keithcsqueensu/bankqtr_db/wiki/Testing) | The two suites and what they pin |
-| [Extending](https://github.com/keithcsqueensu/bankqtr_db/wiki/Extending) | Adding a variable, a bank, a disclosure or an era |
+| [Quick Start](https://github.com/kiwi5boy/bankqtr_db/wiki/Quick-Start) | Clean checkout to built panel, both sources |
+| [Choosing a Source](https://github.com/kiwi5boy/bankqtr_db/wiki/Choosing-a-Source) | Which panel answers your question, and what to do when they disagree |
+| [Reading the Panel](https://github.com/kiwi5boy/bankqtr_db/wiki/Reading-the-Panel) | The six caveats that matter before analysis |
+| [Outputs](https://github.com/kiwi5boy/bankqtr_db/wiki/Outputs) | What each file in `data/out/` contains |
+| [Data Dictionary](https://github.com/kiwi5boy/bankqtr_db/wiki/Data-Dictionary) | Column naming scheme, provenance, and the families |
+| [Universe](https://github.com/kiwi5boy/bankqtr_db/wiki/Universe) | Who is in, who is deliberately out |
+| [Glossary](https://github.com/kiwi5boy/bankqtr_db/wiki/Glossary) | RSSD, MDRM, RCFD/RCON, CECL, EX-13 |
+| [FAQ](https://github.com/kiwi5boy/bankqtr_db/wiki/FAQ) | Short answers with links |
+| [EDGAR Panel](https://github.com/kiwi5boy/bankqtr_db/wiki/EDGAR-Panel) | Two-tier extraction, and why the panel logic is not a groupby |
+| [IR Supplements](https://github.com/kiwi5boy/bankqtr_db/wiki/IR-Supplements) | Office CRE and the disclosures XBRL has no tag for |
+| [HTML Fallback](https://github.com/kiwi5boy/bankqtr_db/wiki/HTML-Fallback) | Parsing the filing's own tables |
+| [Extending to 2013](https://github.com/kiwi5boy/bankqtr_db/wiki/Extending-to-2013) | Build record for the XBRL back-extension |
+| [Call Reports](https://github.com/kiwi5boy/bankqtr_db/wiki/Call-Reports) | What the second source buys, and what it does not |
+| [Going Back to 2001](https://github.com/kiwi5boy/bankqtr_db/wiki/Going-Back-to-2001) | Lineage, predecessors, and the thrift gap |
+| [Traps](https://github.com/kiwi5boy/bankqtr_db/wiki/Traps) | Every catalogued failure, indexed by failure mode |
+| [Testing](https://github.com/kiwi5boy/bankqtr_db/wiki/Testing) | The two suites and what they pin |
+| [Extending](https://github.com/kiwi5boy/bankqtr_db/wiki/Extending) | Adding a variable, a bank, a disclosure or an era |
 
 ## A note on the counts in this file
 
@@ -241,7 +241,7 @@ Figures that describe a build rather than the text — row counts, columns, the
 window, the test count — are wrapped in sentinels and rewritten from the
 committed panels by `scripts/sync_doc_stats.py`, which CI runs on every push to
 `main`. Do not edit them by hand; run `--write`. See
-[Extending](https://github.com/keithcsqueensu/bankqtr_db/wiki/Extending#counts-quoted-in-prose).
+[Extending](https://github.com/kiwi5boy/bankqtr_db/wiki/Extending#counts-quoted-in-prose).
 
 ## Layout
 
