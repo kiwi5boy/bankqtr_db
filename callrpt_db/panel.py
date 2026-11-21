@@ -243,6 +243,57 @@ def universe_filers(
     return pl.DataFrame(rows, schema=MAPPING_SCHEMA, orient="row").unique()
 
 
+def select_holdings(
+    *, comparators: bool = False, tickers: list[str] | None = None
+) -> tuple[config.Holding, ...]:
+    """The firms a build covers: the DFAST universe, optionally widened or cut."""
+    tiers = {"dfast", "ihc", "inactive"}
+    if comparators:
+        tiers.add("comparator")
+    holdings = tuple(h for h in config.HOLDINGS if h.tier in tiers)
+    if tickers:
+        wanted = {t.upper() for t in tickers}
+        holdings = tuple(h for h in holdings if h.ticker.upper() in wanted)
+    return holdings
+
+
+def window_filers(periods: list[str]) -> tuple[set[int], dict[int, str]]:
+    """Every filer in the window, and the latest name the roster gives each.
+
+    The lineage uses the first to recognise a depository NIC's attribute files
+    omit, and the second to name it.
+    """
+    filers: set[int] = set()
+    names: dict[int, str] = {}
+    for period in periods:
+        roster = schedules.roster(cdr.zip_path(period))
+        filers.update(roster["rssd"].to_list())
+        names.update(zip(roster["rssd"].to_list(), roster["name"].to_list()))
+    return filers, names
+
+
+def window_lineages(
+    periods: list[str],
+    holdings: tuple[config.Holding, ...],
+    filers: set[int] | None = None,
+) -> dict[str, lineage_mod.Lineage]:
+    """Each firm's predecessors over the window, as the build resolves them.
+
+    Shared by the build and by ``fetch_call.py --tfr`` so the two cannot
+    disagree about who is in a firm's history -- which is what decides the
+    thrifts it needs.
+    """
+    if filers is None:
+        filers, _ = window_filers(periods)
+    quarter_ends = [cdr.quarter_end(p) for p in periods]
+    return lineage_mod.resolve_all(
+        holdings,
+        quarter_ends,
+        floor=cdr.quarter_end(periods[0]).replace(month=1, day=1),
+        filers=filers,
+    )
+
+
 def unfiled_depositories(
     periods: list[str],
     holdings: tuple[config.Holding, ...],
