@@ -1,10 +1,10 @@
 {
   "edgar": {
-    "rows": 1648,
+    "rows": 1676,
     "columns": 548,
     "banks": 31,
     "first_quarter": "2013Q1",
-    "last_quarter": "2026Q2",
+    "last_quarter": "2026Q3",
     "provenance_columns": 271,
     "early": {
       "window_quarters": 28,
@@ -18,88 +18,88 @@
     }
   },
   "ffiec": {
-    "rows": 3763,
+    "rows": 3798,
     "columns": 279,
     "banks": 38,
     "first_quarter": "2001Q1",
-    "last_quarter": "2026Q2"
+    "last_quarter": "2026Q3"
   },
   "build_tfr": {
-    "bank_quarters": 3763,
-    "charter_quarters": 32283,
+    "bank_quarters": 3798,
+    "charter_quarters": 32898,
     "columns": 279,
     "firms": 38,
-    "periods": 102,
+    "periods": 103,
     "flag_counts": {
       "insured_depository_not_filing": 849,
       "nonaccrual_exceeds_loans": 1,
       "predecessor_failed": 507,
-      "predecessor_history": 1951,
+      "predecessor_history": 1991,
       "rcc_partition_under": 1048
     },
     "coverage_delta": {
-      "before": 1929,
-      "after": 3763,
-      "with_predecessors": 1951
+      "before": 1964,
+      "after": 3798,
+      "with_predecessors": 1991
     },
     "partition": {
-      "checked": 30802,
-      "tied": 29249,
+      "checked": 31404,
+      "tied": 29851,
       "holding_not_checked": 796
     },
     "lineage": {
-      "predecessors": 1654,
+      "predecessors": 1680,
       "fdic_assisted": 95,
-      "acquisitions": 125
+      "acquisitions": 126
     },
     "thrift_gap": {
-      "sought": 72,
-      "resolved": 72,
-      "rows": 2749,
+      "sought": 74,
+      "resolved": 74,
+      "rows": 2869,
       "identities": {
         "gross_less_allowance_is_net": [
-          2749,
-          2749
+          2869,
+          2869
         ],
         "noncurrent_is_nonaccrual_plus_90": [
-          2742,
-          2749
+          2862,
+          2869
         ],
         "charge_offs_less_recoveries_is_net": [
-          2749,
-          2749
+          2869,
+          2869
         ]
       }
     }
   },
   "build_plain": {
-    "bank_quarters": 3676,
-    "charter_quarters": 30802,
+    "bank_quarters": 3711,
+    "charter_quarters": 31404,
     "columns": 278,
     "firms": 38,
-    "periods": 102,
+    "periods": 103,
     "flag_counts": {
       "insured_depository_not_filing": 762,
       "nonaccrual_exceeds_loans": 1,
       "predecessor_failed": 507,
-      "predecessor_history": 1951,
+      "predecessor_history": 1991,
       "rcc_partition_over": 1,
       "rcc_partition_under": 1308
     },
     "coverage_delta": {
-      "before": 1929,
-      "after": 3676,
-      "with_predecessors": 1951
+      "before": 1964,
+      "after": 3711,
+      "with_predecessors": 1991
     },
     "partition": {
-      "checked": 30802,
-      "tied": 29249,
+      "checked": 31404,
+      "tied": 29851,
       "holding_not_checked": 0
     },
     "lineage": {
-      "predecessors": 1654,
+      "predecessors": 1680,
       "fdic_assisted": 95,
-      "acquisitions": 125
+      "acquisitions": 126
     },
     "thrift_gap": {
       "sought": null,
@@ -110,15 +110,15 @@
   },
   "build_edgar": {
     "inputs": {
-      "xbrl_facts": 339180,
-      "html_rows": 6631,
-      "ir_rows": 2135
+      "xbrl_facts": 341076,
+      "html_rows": 6557,
+      "ir_rows": 2215
     },
     "provenance": {
-      "xbrl": 113290,
-      "html": 1896,
-      "derived_ir": 623,
-      "ir_supplement": 263
+      "xbrl": 114564,
+      "html": 1884,
+      "derived_ir": 687,
+      "ir_supplement": 327
     },
     "value_columns": 271
   },

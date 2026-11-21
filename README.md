@@ -6,8 +6,8 @@ provenance and coverage reporting attached.
 
 | Package | Source | Entity | Output | Window |
 |---|---|---|---|---|
-| `bankqtr_db` | SEC EDGAR — XBRL, filing HTML, IR supplements | the holding company, as it reports itself | `panel.parquet` | <!--stats:edgar-window-->2013Q1 – 2026Q2<!--/stats--> |
-| `callrpt_db` | FFIEC — CDR bulk Call Reports, NIC structure data; FDIC BankFind for the thrifts | its bank charters, summed | `call_panel.parquet` | <!--stats:ffiec-window-->2001Q1 – 2026Q2<!--/stats--> |
+| `bankqtr_db` | SEC EDGAR — XBRL, filing HTML, IR supplements | the holding company, as it reports itself | `panel.parquet` | <!--stats:edgar-window-->2013Q1 – 2026Q3<!--/stats--> |
+| `callrpt_db` | FFIEC — CDR bulk Call Reports, NIC structure data; FDIC BankFind for the thrifts | its bank charters, summed | `call_panel.parquet` | <!--stats:ffiec-window-->2001Q1 – 2026Q3<!--/stats--> |
 
 They are not redundant. The EDGAR panel is what the market sees and covers the
 whole consolidated firm; the FFIEC panel is a regulatory filing on a fixed form,
@@ -45,7 +45,7 @@ The FFIEC build is independent and can be run on its own. It starts at **2001Q1*
 and follows each firm back through its predecessors:
 
 ```bash
-uv run python scripts/fetch_call.py                      # 102 quarters, ~850 MB
+uv run python scripts/fetch_call.py                      # 103 quarters, ~850 MB
 uv run python scripts/resolve_rssd.py --write-config     # bank -> RSSD, once
 uv run python scripts/build_call_panel.py                # 2001Q1 onward, with lineage
 uv run python scripts/fetch_call.py --tfr                # the thrifts CDR has nothing for
@@ -65,8 +65,8 @@ Both builds land in `data/out/`:
 
 | File | Contents |
 |---|---|
-| `panel.parquet` / `.csv` | the EDGAR bank-quarter panel — <!--stats:edgar-extent-->1,648 rows, 31 banks, 548 columns<!--/stats--> |
-| `call_panel.parquet` / `.csv` | the FFIEC panel — <!--stats:ffiec-extent-->3,763 rows, 38 firms, 279 columns<!--/stats--> |
+| `panel.parquet` / `.csv` | the EDGAR bank-quarter panel — <!--stats:edgar-extent-->1,676 rows, 31 banks, 548 columns<!--/stats--> |
+| `call_panel.parquet` / `.csv` | the FFIEC panel — <!--stats:ffiec-extent-->3,798 rows, 38 firms, 279 columns<!--/stats--> |
 | `call_panel_charters.parquet` | one row per bank charter per quarter, with its predecessor |
 | `panel_coverage.csv` / `call_panel_coverage.csv` | per bank and variable: how many quarters are populated |
 | `panel_flags.csv` / `call_panel_flags.csv` | bank-quarters failing a sanity check |
@@ -180,7 +180,7 @@ a property of the underlying disclosure that the panel reports rather than hides
    for every quarter it existed. JPMorgan's loan book jumps by Washington
    Mutual's entirety at 2008Q3 — the quarter the Call Report first consolidates
    it — and reads as growth. The shipped panel is the `--tfr` build, which
-   reconstructs <!--stats:thrift-rows-->2,749<!--/stats--> charter-quarters from
+   reconstructs <!--stats:thrift-rows-->2,869<!--/stats--> charter-quarters from
    FDIC BankFind; `n_insured_not_filing` counts what is still missing.
 
 The full account — the other two, and the rest of what the long FFIEC window

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import logging
 import sys
 
@@ -11,13 +12,20 @@ from bankqtr_db.config import BANKS, ensure_dirs
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument(
+        "--refresh",
+        action="store_true",
+        help="re-download cached payloads; without it a new quarter is never seen",
+    )
+    args = ap.parse_args(argv)
     ensure_dirs()
     failures = []
     for bank in BANKS:
         for label, fn in (("facts", edgar.company_facts), ("subs", edgar.submissions)):
             try:
-                payload = fn(bank.cik)
+                payload = fn(bank.cik, refresh=args.refresh)
             except Exception as exc:  # noqa: BLE001 - report and continue
                 failures.append((bank.name, label, str(exc)))
                 print(f"FAIL {bank.ticker:5s} {label}: {exc}", flush=True)
